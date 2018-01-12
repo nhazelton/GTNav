@@ -7,4 +7,4 @@ Part of a Junior Design Project
 =======
 # Nate Hazelton
 <h1>Yo my commits are working<>
->>>>>>> ae8a2eacc42e380da02ad35a57e8ab51db6edbac
+>>>>>>>
