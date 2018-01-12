@@ -8,3 +8,4 @@ Part of a Junior Design Project
 # Nate Hazelton
 <h1>Yo my commits are working<>
 >>>>>>>
+is my git working
