@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{52AF2A1D-D82E-4263-9C1C-7947D74385A3}|Default">
+  <MonoDevelop.Ide.ItemProperties.GTNav.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GTNav/GTNavPage.xaml">
+    <Files>
+      <File FileName="GTNav/GTNavPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="GTNav/GTNavPage.xaml" Line="5" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GTNav.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BA0034C-C9F3-499C-9830-C8BD18199DAC">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.GTNav.iOS>
+</Properties>
