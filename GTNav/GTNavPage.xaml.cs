@@ -8,5 +8,9 @@ namespace GTNav
         {
             InitializeComponent();
         }
+        void loginEvent(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Login", "Username: " + usernameBox.Text + "\nPassword: " + passwordBox.Text, "Close");
+        }
     }
 }
