@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.GTNav.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GTNav/GTNavPage.xaml.cs">
     <Files>
-      <File FileName="GTNav/GTNavPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="GTNav/GTNavPage.xaml" Line="15" Column="19" />
+      <File FileName="GTNav/GTNavPage.xaml.cs" Line="17" Column="1" />
+      <File FileName="GTNav/GTNavPage.xaml" Line="17" Column="1" />
       <File FileName="GTNav/App.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
