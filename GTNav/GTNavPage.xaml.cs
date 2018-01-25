@@ -1,5 +1,4 @@
 ﻿using Xamarin.Forms;
-
 namespace GTNav
 {
     public partial class GTNavPage : ContentPage
@@ -8,7 +7,7 @@ namespace GTNav
         {
             InitializeComponent();
         }
-        void loginEvent(object sender, System.EventArgs e)
+        void LoginEvent(object sender, System.EventArgs e)
         {
             DisplayAlert("Login", "Username: " + usernameBox.Text + "\nPassword: " + passwordBox.Text, "Close");
         }
