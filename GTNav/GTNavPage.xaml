@@ -12,6 +12,9 @@
             HorizontalTextAlignment="Center"
             x:Name="passwordBox"/>
         <Button Text="Login" Clicked="LoginEvent"/>
+<<<<<<< HEAD
         
+=======
+>>>>>>> kevin
     </StackLayout>
 </ContentPage>
