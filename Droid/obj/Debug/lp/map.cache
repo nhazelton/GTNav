@@ -22,3 +22,10 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 System.Diagnostics.Tools
+Xamarin.Forms.Maps
+System.Resources.ResourceManager
+Xamarin.Forms.Maps.Android
+Xamarin.GooglePlayServices.Basement
+Xamarin.GooglePlayServices.Tasks
+Xamarin.GooglePlayServices.Base
+Xamarin.GooglePlayServices.Maps
