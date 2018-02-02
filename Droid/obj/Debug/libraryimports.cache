@@ -10,6 +10,10 @@
     <ManifestDocument>obj/Debug/lp/16/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/lp/17/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/lp/18/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/lp/25/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/lp/26/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/lp/27/jl/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/lp/28/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/lp/3/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/lp/5/jl/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/lp/6/jl/AndroidManifest.xml</ManifestDocument>
@@ -29,6 +33,10 @@
     <Jar>obj/Debug/lp/16/jl/bin/classes.jar</Jar>
     <Jar>obj/Debug/lp/17/jl/bin/classes.jar</Jar>
     <Jar>obj/Debug/lp/18/jl/bin/classes.jar</Jar>
+    <Jar>obj/Debug/lp/25/jl/classes.jar</Jar>
+    <Jar>obj/Debug/lp/26/jl/classes.jar</Jar>
+    <Jar>obj/Debug/lp/27/jl/classes.jar</Jar>
+    <Jar>obj/Debug/lp/28/jl/classes.jar</Jar>
     <Jar>obj/Debug/lp/3/jl/bin/classes.jar</Jar>
     <Jar>obj/Debug/lp/4/jl/support-annotations.jar</Jar>
     <Jar>obj/Debug/lp/5/jl/bin/classes.jar</Jar>

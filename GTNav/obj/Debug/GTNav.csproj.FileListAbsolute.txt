@@ -15,3 +15,5 @@
 /Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.GTNavPage.xaml.g.cs
 /Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.dll
 /Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.pdb
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Xamarin.Forms.Maps.dll
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Xamarin.Forms.Maps.xml

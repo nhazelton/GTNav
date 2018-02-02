@@ -31,13 +31,17 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.Maps.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.Maps.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
@@ -317,81 +321,85 @@
 	-r \
 	/Users/kevin/Projects/GTNav/GTNav/bin/Debug/GTNav.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.Maps.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.Maps.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
+	-r \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
+	-r \
+	/Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
 	--target-framework \
 	'Xamarin.iOS,v1.0' \
 	/Users/kevin/Projects/GTNav/iOS/bin/iPhoneSimulator/Debug/GTNav.iOS.exe \

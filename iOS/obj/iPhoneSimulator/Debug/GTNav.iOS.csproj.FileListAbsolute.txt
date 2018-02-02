@@ -55,3 +55,6 @@
 /Users/kevin/Projects/GTNav/iOS/obj/iPhoneSimulator/Debug/GTNav.iOS.csproj.CoreCompileInputs.cache
 /Users/kevin/Projects/GTNav/iOS/obj/iPhoneSimulator/Debug/GTNav.iOS.exe
 /Users/kevin/Projects/GTNav/iOS/obj/iPhoneSimulator/Debug/GTNav.iOS.pdb
+/Users/kevin/Projects/GTNav/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.dll
+/Users/kevin/Projects/GTNav/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.xml
+/Users/kevin/Projects/GTNav/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
