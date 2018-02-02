@@ -1,16 +1,14 @@
-﻿<Properties StartupConfiguration="{5210D6D3-13E6-46B7-B9AA-EA3F88D91453}|Default">
+﻿<Properties StartupConfiguration="{8F9030EF-2AAB-474A-A717-1BB600FBC809}|Default">
   <MonoDevelop.Ide.ItemProperties.GTNav.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GTNav/GTNavPage.xaml.cs">
     <Files>
-      <File FileName="GTNav/GTNavPage.xaml" Line="9" Column="15" />
-      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.1.5-0/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1144" Column="46" />
-      <File FileName="GTNav/packages.config" Line="1" Column="1" />
-      <File FileName="GTNav/GTNavPage.xaml.cs" Line="14" Column="29" />
-      <File FileName="Droid/MainActivity.cs" Line="28" Column="1" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="12" Column="118" />
+      <File FileName="GTNav/GTNavPage.xaml" Line="5" Column="5" />
+      <File FileName="GTNav/GTNavPage.xaml.cs" Line="8" Column="18" />
+      <File FileName="Droid/MainActivity.cs" Line="26" Column="50" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="14" Column="12" />
+      <File FileName="Droid/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.1.5-0/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2094" Column="3" />
       <File FileName="Droid/packages.config" Line="1" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="16" Column="38" />
-      <File FileName="iOS/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

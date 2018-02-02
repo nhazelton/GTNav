@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj/Debug/lp/0/jl/formsviewgroup.jar</Jar>
+    <Jar>obj/Debug/lp/4/jl/support-annotations.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/0/jl/formsviewgroup.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/10/jl/bin/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/11/jl/bin/classes.jar</Jar>
@@ -11,11 +13,11 @@
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/16/jl/bin/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/17/jl/bin/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/18/jl/bin/classes.jar</Jar>
+    <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/25/jl/classes.jar</Jar>
+    <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/26/jl/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/27/jl/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/28/jl/classes.jar</Jar>
-    <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/29/jl/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/3/jl/bin/classes.jar</Jar>
-    <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/30/jl/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/4/jl/support-annotations.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/5/jl/bin/classes.jar</Jar>
     <Jar>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/6/jl/bin/classes.jar</Jar>
@@ -31,9 +33,9 @@
     <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/14/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/15/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/17/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/25/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/27/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/29/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/30/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/28/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj/Debug/lp/12/jl/assets</ResolvedAssetDirectory>
@@ -47,8 +49,8 @@
     <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/14.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/15.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/17.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/25.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/27.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/29.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/30.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/kevin/Projects/GTNav/Droid/obj/Debug/lp/28.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

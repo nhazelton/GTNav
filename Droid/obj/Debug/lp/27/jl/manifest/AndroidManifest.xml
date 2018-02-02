@@ -13,9 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.gms">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.gms.base">
   <uses-sdk android:minSdkVersion="14" />
   <application>
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
   </application>
 </manifest>
