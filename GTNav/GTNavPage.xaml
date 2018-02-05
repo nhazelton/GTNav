@@ -10,5 +10,18 @@
             IsShowingUser="true"
             MapType="Hybrid"
         />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Text="Walk"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Run"/>
+        </Grid>
     </StackLayout>
 </ContentPage>
