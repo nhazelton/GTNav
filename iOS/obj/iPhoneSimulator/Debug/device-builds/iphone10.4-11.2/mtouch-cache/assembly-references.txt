@@ -35,3 +35,5 @@
 /Users/kevin/Projects/GTNav/packages/Xamarin.Forms.2.5.0.122203/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Xml.XDocument.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.Xml.Linq.dll
