@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{5210D6D3-13E6-46B7-B9AA-EA3F88D91453}|Default">
   <MonoDevelop.Ide.ItemProperties.GTNav.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GTNav/GTNavPage.xaml.cs">
     <Files>
       <File FileName="GTNav/Locations.xml" Line="6" Column="13" />
       <File FileName="GTNav/Location.cs" Line="13" Column="2" />
       <File FileName="GTNav/GTNavPage.xaml" Line="16" Column="9" />
-      <File FileName="GTNav/GTNavPage.xaml.cs" Line="31" Column="28" />
-      <File FileName="GTNav/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="GTNav/GTNavPage.xaml.cs" Line="22" Column="1" />
+      <File FileName="GTNav/App.xaml.cs" Line="11" Column="1" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
