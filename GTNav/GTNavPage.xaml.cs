@@ -14,7 +14,7 @@ namespace GTNav
 {
     public partial class GTNavPage : ContentPage
     {
-        //private List<Location> _rawData = null;
+        private List<Location> locationList = null;
         public GTNavPage()
         {
             InitializeComponent();
@@ -25,12 +25,6 @@ namespace GTNav
         private async void LoadXMLData()
         {
             string resPrefix = "GTNav.";
-            //#if __IOS__
-            //    string resPrefix = "GTNav.iOS.";
-            //#endif
-            //#if __ANDROID__
-            //    string resPrefix = "GTNav.Droid.";
-            //#endif
 
             var assembly = typeof(GTNavPage).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream(resPrefix + "Locations.xml");
@@ -39,12 +33,11 @@ namespace GTNav
                 IEnumerable<Location> locations = from l in doc.Descendants("Location")
                                           select new Location
                                           {
-                                              Name = l.Attribute("name").Value,
-                                              Latititude = float.Parse(l.Attribute("latitude").Value),
-                                              Longitude = float.Parse(l.Attribute("longitude").Value)
-
+                                              Name = l.Attribute("Name").Value,
+                                              Latititude = float.Parse(l.Attribute("Latitude").Value),
+                                              Longitude = float.Parse(l.Attribute("Longitude").Value)
                                           };
-                //_rawData = locations.ToList();
+                locationList = locations.ToList();
             });
         }
     }
