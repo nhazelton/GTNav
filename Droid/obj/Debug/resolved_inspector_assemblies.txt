@@ -1,2 +1,2 @@
-/Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/Agents/Android/Xamarin.Interactive.dll
-/Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/Agents/Android/Xamarin.Interactive.Android.dll
+C:\Program Files (x86)\Xamarin\Workbooks\Agents\Forms\Android\Xamarin.Interactive.dll
+C:\Program Files (x86)\Xamarin\Workbooks\Agents\Forms\Android\Xamarin.Interactive.Android.dll
