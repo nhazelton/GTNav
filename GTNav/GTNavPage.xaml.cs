@@ -57,6 +57,11 @@ namespace GTNav
         public void OnWalkButtonPressed(object sender, EventArgs e) 
         {
             if (!walkPressed) { // if button is currently 'on'
+                if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
+                    ridePressed = false;
+                    rideButton.BackgroundColor = Color.Green;
+                    rideButton.TextColor = Color.Black;
+                }
                 walkPressed = true;
                 walkButton.BackgroundColor = Color.White;
                 walkButton.TextColor = Color.Purple;
@@ -70,6 +75,11 @@ namespace GTNav
         public void OnRideButtonPressed(object sender, EventArgs e) 
         {
             if (!ridePressed) { // if button is currently 'on'
+                if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
+                    walkPressed = false;
+                    walkButton.BackgroundColor = Color.Purple;
+                    walkButton.TextColor = Color.Black;
+                }
                 ridePressed = true;
                 rideButton.BackgroundColor = Color.White;
                 rideButton.TextColor = Color.Green;
