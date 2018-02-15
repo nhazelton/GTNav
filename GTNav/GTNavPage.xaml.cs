@@ -37,6 +37,8 @@ namespace GTNav
             
             rideButton = MyRideButton;
             rideButton.Clicked += OnRideButtonPressed; // OnRideButtonPressed happens when button is tapped -- see below
+
+            // add future functionality code here
         }
 
         private List<Location> LoadXMLData() {
