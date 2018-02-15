@@ -5,6 +5,16 @@
     xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
     x:Class="GTNav.GTNavPage">
     <StackLayout VerticalOptions="FillAndExpand">
+        <Grid VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <SearchBar Grid.Row="0" Grid.Column="0"/>
+        </Grid>
+
         <maps:Map
             x:Name="MyMap"
             IsShowingUser="true"

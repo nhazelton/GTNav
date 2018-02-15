@@ -11,7 +11,7 @@
 namespace GTNav {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/kevin/Projects/GTNav/GTNav/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Nate\\Documents\\GitHub\\GTNav\\GTNav\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
