@@ -14,11 +14,26 @@ namespace GTNav
 {
     public partial class GTNavPage : ContentPage
     {
+
+        SearchBar searchBar;
+        Button walkButton;
+        Button rideButton;
+
         public GTNavPage()
         {
             InitializeComponent();
             List<Location> tempList = LoadXMLData();
             Debug.WriteLine(tempList.First());
+
+            searchBar = MySearchBar;
+            String searchQuery; // changes to what the user searched for
+            searchBar.SearchCommand = new Command(() => { searchQuery = searchBar.Text; searchBar.Text = "OK!"; }); // sets "on enter" command to populate searchQuery and display success message on bar
+
+            walkButton = MyWalkButton;
+            // code for walk button
+
+            rideButton = MyRideButton;
+            // code for ride button
         }
 
 

@@ -5,8 +5,10 @@
     xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
     x:Class="GTNav.GTNavPage">
     <StackLayout VerticalOptions="FillAndExpand">
-        
-        <SearchBar>Kevin</SearchBar>
+        <SearchBar
+            x:Name="MySearchBar"
+            Placeholder="Search for a location..."
+        />
 
         <maps:Map
             x:Name="MyMap"
@@ -23,8 +25,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="Walk" BackgroundColor="Purple"/>
-            <Button Grid.Row="0" Grid.Column="1" Text="Ride" BackgroundColor="Green"/>
+            <Button x:Name="MyWalkButton" Grid.Row="0" Grid.Column="0" Text="Walk" BackgroundColor="Purple"/>
+            <Button x:Name="MyRideButton" Grid.Row="0" Grid.Column="1" Text="Ride" BackgroundColor="Green"/>
         </Grid>
     </StackLayout>
 </ContentPage>
