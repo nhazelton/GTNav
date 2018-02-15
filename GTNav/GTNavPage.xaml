@@ -5,12 +5,15 @@
     xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
     x:Class="GTNav.GTNavPage">
     <StackLayout VerticalOptions="FillAndExpand">
+        
+        <SearchBar>Kevin</SearchBar>
+
         <maps:Map
             x:Name="MyMap"
             IsShowingUser="true"
-            MapType="Hybrid"
+            MapType="Street"
         />
-
+        
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -20,8 +23,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="Walk"/>
-            <Button Grid.Row="0" Grid.Column="1" Text="Run"/>
+            <Button Grid.Row="0" Grid.Column="0" Text="Walk" BackgroundColor="Purple"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Ride" BackgroundColor="Green"/>
         </Grid>
     </StackLayout>
 </ContentPage>
