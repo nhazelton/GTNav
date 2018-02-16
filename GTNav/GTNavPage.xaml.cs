@@ -16,6 +16,7 @@ namespace GTNav
     public partial class GTNavPage : ContentPage
     {
         SearchBar searchBar;
+
         Button walkButton;
         bool walkPressed = false;
 

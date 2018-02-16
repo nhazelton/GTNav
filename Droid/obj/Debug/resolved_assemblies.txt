@@ -35,6 +35,7 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.Goog
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.IO.dll
@@ -42,7 +43,6 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.X
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Linq.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Threading.dll

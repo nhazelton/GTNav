@@ -18,7 +18,7 @@ namespace GTNav {
         private global::Xamarin.Forms.SearchBar MySearchBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Maps.Map MyMap;
+        private global::GTNav.CampusMap MyCampusMap;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button MyWalkButton;
@@ -30,7 +30,7 @@ namespace GTNav {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(GTNavPage));
             MySearchBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.SearchBar>(this, "MySearchBar");
-            MyMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Maps.Map>(this, "MyMap");
+            MyCampusMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::GTNav.CampusMap>(this, "MyCampusMap");
             MyWalkButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "MyWalkButton");
             MyRideButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "MyRideButton");
         }
