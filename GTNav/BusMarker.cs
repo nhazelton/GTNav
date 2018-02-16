@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms.Maps;
 
+
 namespace GTNav {
-    class BusMarker {
+
+    public class BusMarker {
+
         public Position Position { get; set; }
         public double Radius { get; set; }
+
     }
 }

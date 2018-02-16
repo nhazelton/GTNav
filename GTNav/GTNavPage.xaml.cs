@@ -11,10 +11,11 @@ using System.Xml;
 using System.Reflection;
 using System.Linq;
 
-namespace GTNav
-{
-    public partial class GTNavPage : ContentPage
-    {
+
+namespace GTNav {
+
+    public partial class GTNavPage : ContentPage {
+
         SearchBar searchBar;
 
         CampusMap campusMap;
@@ -25,8 +26,7 @@ namespace GTNav
         Button rideButton;
         bool ridePressed = false;
 
-        public GTNavPage()
-        {
+        public GTNavPage() {
             InitializeComponent();
             List<Location> tempList = LoadXMLData();
             Debug.WriteLine(tempList.First());
@@ -75,8 +75,7 @@ namespace GTNav
             return locations.ToList();
         }
 
-        public void OnWalkButtonPressed(object sender, EventArgs e) 
-        {
+        public void OnWalkButtonPressed(object sender, EventArgs e) {
             if (!walkPressed) { // if button is currently 'on'
                 if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
                     ridePressed = false;
@@ -93,8 +92,7 @@ namespace GTNav
             }
         }
 
-        public void OnRideButtonPressed(object sender, EventArgs e) 
-        {
+        public void OnRideButtonPressed(object sender, EventArgs e) {
             if (!ridePressed) { // if button is currently 'on'
                 if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
                     walkPressed = false;
@@ -110,5 +108,7 @@ namespace GTNav
                 rideButton.TextColor = Color.Black;
             }
         }
+
     } // GTNavPage
+
 } // GTNav

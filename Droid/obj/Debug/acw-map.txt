@@ -1,3 +1,7 @@
+GTNav.Droid.CampusMapRenderer, GTNav.Droid;md5b5fff83e142b3ddc5805aa729a5edd54.CampusMapRenderer
+GTNav.Droid.CampusMapRenderer, GTNav.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b5fff83e142b3ddc5805aa729a5edd54.CampusMapRenderer
+GTNav.Droid.CampusMapRenderer;md5b5fff83e142b3ddc5805aa729a5edd54.CampusMapRenderer
+gtnav.droid.CampusMapRenderer;md5b5fff83e142b3ddc5805aa729a5edd54.CampusMapRenderer
 GTNav.Droid.MainActivity, GTNav.Droid;md5b5fff83e142b3ddc5805aa729a5edd54.MainActivity
 GTNav.Droid.MainActivity, GTNav.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b5fff83e142b3ddc5805aa729a5edd54.MainActivity
 GTNav.Droid.MainActivity;md5b5fff83e142b3ddc5805aa729a5edd54.MainActivity
