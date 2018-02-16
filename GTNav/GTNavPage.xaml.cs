@@ -49,7 +49,7 @@ namespace GTNav
             };
 
             campusMap.Pins.Add(culc);
-            campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(1.0)));
+            campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(0.4)));
 
             walkButton = MyWalkButton;
             walkButton.Clicked += OnWalkButtonPressed; // OnWalkButtonPressed happens when button is tapped -- see below

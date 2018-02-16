@@ -131,6 +131,7 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.Form
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\GTNav.Droid.dll
+C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\GTNav.dll
 bin\Debug\FormsViewGroup.dll.mdb
 bin\Debug\GTNav.dll.mdb
 bin\Debug\Xamarin.Forms.Core.dll.mdb
