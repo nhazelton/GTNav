@@ -118,4 +118,3 @@ C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csp
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.exe
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.pdb
-C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\GTNav.dll.mdb
