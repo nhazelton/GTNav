@@ -17,6 +17,8 @@ namespace GTNav
     {
         SearchBar searchBar;
 
+        CampusMap campusMap;
+
         Button walkButton;
         bool walkPressed = false;
 
@@ -32,6 +34,22 @@ namespace GTNav
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
             searchBar.SearchCommand = new Command(() => { searchQuery = searchBar.Text; searchBar.Text = "OK!"; }); // sets "on enter" command to populate searchQuery and display success message on bar
+
+            campusMap = MyCampusMap;
+            var sampleMarker = new Position(33.774671, -84.396374);
+            campusMap.Marker = new BusMarker {
+                Position = sampleMarker,
+                Radius = 100
+            };
+
+            var culc = new Pin {
+                Type = PinType.Place,
+                Position = new Position(33.774671, -84.396374),
+                Label = "Clough Undergraduate Learning Commons",
+            };
+
+            campusMap.Pins.Add(culc);
+            campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(1.0)));
 
             walkButton = MyWalkButton;
             walkButton.Clicked += OnWalkButtonPressed; // OnWalkButtonPressed happens when button is tapped -- see below
