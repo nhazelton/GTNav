@@ -33,4 +33,3 @@ C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.App.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.GTNavPage.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.dll
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.pdb
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csprojResolveAssemblyReference.cache
