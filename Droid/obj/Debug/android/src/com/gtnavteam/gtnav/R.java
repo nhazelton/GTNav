@@ -3087,7 +3087,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
+        public static final int avd_hide_password_1=0x7f020123;
+        public static final int avd_hide_password_2=0x7f020124;
+        public static final int avd_hide_password_3=0x7f020125;
         public static final int avd_show_password=0x7f020054;
+        public static final int avd_show_password_1=0x7f020126;
+        public static final int avd_show_password_2=0x7f020127;
+        public static final int avd_show_password_3=0x7f020128;
         public static final int common_full_open_on_phone=0x7f020055;
         public static final int common_google_signin_btn_icon_dark=0x7f020056;
         public static final int common_google_signin_btn_icon_dark_focused=0x7f020057;

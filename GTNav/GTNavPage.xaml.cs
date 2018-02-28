@@ -6,10 +6,10 @@ using System.Xml.Linq;
 using System.Diagnostics;
 using System;
 using System.IO;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Reflection;
 using System.Linq;
+using System.Collections.ObjectModel;
 
 
 namespace GTNav {
@@ -17,7 +17,8 @@ namespace GTNav {
     public partial class GTNavPage : ContentPage {
 
         SearchBar searchBar;
-
+        ObservableCollection<Location> locations;
+        List<Location> locationList;
         CampusMap campusMap;
 
         Button walkButton;
@@ -28,12 +29,35 @@ namespace GTNav {
 
         public GTNavPage() {
             InitializeComponent();
-            List<Location> tempList = LoadXMLData();
-            Debug.WriteLine(tempList.First());
+            locationList = LoadXMLData();
+
+            locations = new ObservableCollection<Location>(locationList);
+            LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
+
 
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
-            searchBar.SearchCommand = new Command(() => { searchQuery = searchBar.Text; searchBar.Text = "OK!"; }); // sets "on enter" command to populate searchQuery and display success message on bar
+            searchBar.SearchCommand = new Command(() => { 
+                searchQuery = searchBar.Text;
+                searchBar.Text = "OK!";
+                Debug.WriteLine(searchQuery);
+            }); // sets "on enter" command to populate searchQuery and display success message on bar
+
+
+            searchBar.TextChanged += (object sender, TextChangedEventArgs e) => // Whenever a new character is entered filter the suggestion results
+            {
+                List<Location> searchList = new List<Location>();
+                foreach (Location loc in locationList) {
+                    if (loc.Name.ToLowerInvariant().Contains(e.NewTextValue)) {
+                        searchList.Add(loc);
+                    }
+                }
+                LocationSuggestions.ItemsSource = new ObservableCollection<Location>(searchList);
+                Debug.WriteLine(e.NewTextValue);
+            };
+
+
+
 
             campusMap = MyCampusMap;
             var sampleMarker = new Position(33.774671, -84.396374);
@@ -59,6 +83,7 @@ namespace GTNav {
 
             // add future functionality code here
         }
+
 
         private List<Location> LoadXMLData() {
             string resPrefix = "GTNav.";
