@@ -130,14 +130,4 @@ C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/GTNav.Droid.
 C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Forms.Core.dll.mdb
 C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll.mdb
 C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll.mdb
-bin/Debug/FormsViewGroup.dll.mdb
-bin/Debug/Xamarin.Forms.Core.dll.mdb
-bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
-bin/Debug/Xamarin.Forms.Xaml.dll.mdb
-obj/Debug/linksrc/FormsViewGroup.dll.mdb
-obj/Debug/linksrc/Xamarin.Forms.Core.dll.mdb
-obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb
-obj/Debug/linksrc/Xamarin.Forms.Xaml.dll.mdb
-obj/Debug/linksrc/GTNav.Droid.pdb
-obj/Debug/linksrc/GTNav.pdb
-obj/Debug/linksrc/Mono.Android.pdb
+C:\Users\GrumpyGil\GTNav\GTNav\bin\Debug\GTNav.dll
