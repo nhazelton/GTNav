@@ -33,3 +33,5 @@ C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.App.xaml.g.cs
 C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.GTNavPage.xaml.g.cs
 C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.dll
 C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.pdb
+/Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.MenuPage.xaml.g.cs
+/Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.RootPage.xaml.g.cs

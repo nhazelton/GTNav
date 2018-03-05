@@ -21,6 +21,8 @@ namespace GTNav {
         List<Location> locationList;
         CampusMap campusMap;
 
+        ListView locationSuggestions;
+
         Button walkButton;
         bool walkPressed = false;
 
@@ -34,10 +36,10 @@ namespace GTNav {
             locations = new ObservableCollection<Location>(locationList);
             LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
 
-
+            locationSuggestions = LocationSuggestions;
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
-            searchBar.SearchCommand = new Command(() => { 
+            searchBar.SearchCommand = new Command(() => { //Starts an action once an item is searched
                 searchQuery = searchBar.Text;
                 searchBar.Text = "OK!";
                 Debug.WriteLine(searchQuery);
