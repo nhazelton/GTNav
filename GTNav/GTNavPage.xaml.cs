@@ -48,6 +48,11 @@ namespace GTNav {
 
             searchBar.TextChanged += (object sender, TextChangedEventArgs e) => // Whenever a new character is entered filter the suggestion results
             {
+                if (e.NewTextValue == "") {
+                    locationSuggestions.IsVisible = false;
+                } else {
+                    locationSuggestions.IsVisible = true;
+                }
                 List<Location> searchList = new List<Location>();
                 foreach (Location loc in locationList) {
                     if (loc.Name.ToLowerInvariant().Contains(e.NewTextValue)) {
