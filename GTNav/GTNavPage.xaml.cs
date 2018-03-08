@@ -6,10 +6,15 @@ using System.Xml.Linq;
 using System.Diagnostics;
 using System;
 using System.IO;
-using System.Xml;
+using System.Net.Http;
 using System.Reflection;
 using System.Linq;
 using System.Collections.ObjectModel;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 
 namespace GTNav {
@@ -21,22 +26,24 @@ namespace GTNav {
         List<Location> locationList;
         CampusMap campusMap;
 
-        ListView locationSuggestions;
-
         Button walkButton;
         bool walkPressed = false;
 
         Button rideButton;
         bool ridePressed = false;
 
+        HttpClient client;
+
         public GTNavPage() {
             InitializeComponent();
             locationList = LoadXMLData();
+            client = new HttpClient();
+            client.MaxResponseContentBufferSize = 256000;
 
             locations = new ObservableCollection<Location>(locationList);
             LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
 
-            locationSuggestions = LocationSuggestions;
+
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
             searchBar.SearchCommand = new Command(() => { //Starts an action once an item is searched
@@ -49,9 +56,9 @@ namespace GTNav {
             searchBar.TextChanged += (object sender, TextChangedEventArgs e) => // Whenever a new character is entered filter the suggestion results
             {
                 if (e.NewTextValue == "") {
-                    locationSuggestions.IsVisible = false;
+                    LocationSuggestions.IsVisible = false;
                 } else {
-                    locationSuggestions.IsVisible = true;
+                    LocationSuggestions.IsVisible = true;
                 }
                 List<Location> searchList = new List<Location>();
                 foreach (Location loc in locationList) {
@@ -61,6 +68,23 @@ namespace GTNav {
                 }
                 LocationSuggestions.ItemsSource = new ObservableCollection<Location>(searchList);
                 Debug.WriteLine(e.NewTextValue);
+            };
+
+            LocationSuggestions.ItemSelected += (sender, e) => {
+                Location loc = (Location)e.SelectedItem;
+                Debug.WriteLine(loc.ToString());
+
+                string startLat = "40";
+                string startLong = "40";
+
+                string destLat = "41";
+                string destLong = "41";
+
+                string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+                Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
+                timeTask.Wait();
+                string timeString = timeTask.Result;
+                Debug.WriteLine(timeString);
             };
 
 
@@ -89,6 +113,23 @@ namespace GTNav {
             rideButton.Clicked += OnRideButtonPressed; // OnRideButtonPressed happens when button is tapped -- see below
 
             // add future functionality code here
+        }
+
+
+        public async Task<String> SendLocations(string URL)
+        {
+            var uri = new Uri(URL);
+            var response = await client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                //JObject json = JsonConvert.DeserializeObject<JObject>(content);
+                JToken token = JToken.Parse(content);
+                JArray rows = (JArray)token.SelectToken("rows[0].elements")[0];
+                Debug.WriteLine(rows);
+                Debug.WriteLine(rows);
+            }
+            return "0";
         }
 
 

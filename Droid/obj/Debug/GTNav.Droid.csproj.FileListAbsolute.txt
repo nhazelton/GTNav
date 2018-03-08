@@ -131,6 +131,8 @@ C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Form
 C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll.mdb
 C:/Users/Nate/Documents/GitHub/GTNav/Droid/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll.mdb
 C:/Users/GrumpyGil/GTNav/GTNav/bin/Debug/GTNav.dll
+/Users/kevin/Projects/GTNav/Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/kevin/Projects/GTNav/Droid/bin/Debug/Newtonsoft.Json.xml
 obj/Debug/linksrc/FormsViewGroup.dll.mdb
 obj/Debug/linksrc/Xamarin.Forms.Core.dll.mdb
 obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb
