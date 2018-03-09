@@ -27,5 +27,8 @@ namespace GTNav.Droid
 
             LoadApplication(new App());
         }
+
     }
+
 }
+
