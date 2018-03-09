@@ -37,3 +37,8 @@ C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.pdb
 /Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.RootPage.xaml.g.cs
 /Users/kevin/Projects/GTNav/GTNav/bin/Debug/Newtonsoft.Json.dll
 /Users/kevin/Projects/GTNav/GTNav/bin/Debug/Newtonsoft.Json.xml
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Plugin.Geolocator.dll
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Plugin.Geolocator.Abstractions.pdb
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Plugin.Geolocator.pdb
+/Users/kevin/Projects/GTNav/GTNav/bin/Debug/Plugin.Geolocator.xml

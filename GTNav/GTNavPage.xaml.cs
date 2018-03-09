@@ -74,12 +74,14 @@ namespace GTNav {
                 Location loc = (Location)e.SelectedItem;
                 Debug.WriteLine(loc.ToString());
 
-                string startLat = "40";
-                string startLong = "40";
 
-                string destLat = "41";
-                string destLong = "41";
+                string startLat = "33.7746";
+                string startLong = "-84.39";
 
+                string destLat = loc.Latititude.ToString();
+                string destLong = loc.Longitude.ToString();
+                Debug.WriteLine(destLat);
+                Debug.WriteLine(destLong);
                 string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
                 Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
                 timeTask.Wait();
@@ -123,13 +125,11 @@ namespace GTNav {
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                //JObject json = JsonConvert.DeserializeObject<JObject>(content);
                 JToken token = JToken.Parse(content);
-                JArray rows = (JArray)token.SelectToken("rows[0].elements")[0];
-                Debug.WriteLine(rows);
-                Debug.WriteLine(rows);
+                string time = token["rows"][0]["elements"][0]["duration"]["text"].ToString();
+                return time;
             }
-            return "0";
+            return "";
         }
 
 
