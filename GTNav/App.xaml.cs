@@ -5,16 +5,29 @@ namespace GTNav
     public partial class App : Application
     {
 
-        public NavigationPage NavigationPage { get; private set; }
+        public static NavigationPage NavigationPage { get; private set; }
+        private static RootPage RootPage;
+
+        public static bool MenuIsPresented
+        {
+            get
+            {
+                return RootPage.IsPresented;
+            }
+            set
+            {
+                RootPage.IsPresented = value;
+            }
+        }
 
         public App()
         {
             var menuPage = new MenuPage();
             NavigationPage = new NavigationPage(new GTNavPage());
-            var rootPage = new RootPage();
-            rootPage.Master = menuPage;
-            rootPage.Detail = NavigationPage;
-            MainPage = rootPage;
+            RootPage = new RootPage();
+            RootPage.Master = menuPage;
+            RootPage.Detail = NavigationPage;
+            MainPage = RootPage;
 
 
             InitializeComponent();

@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GTNav.MenuPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="PlaceHolder Text"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="Gray">
+            <Button HeightRequest="100" Text="Main Map" TextColor="White" BackgroundColor="Gold" Command="{Binding GoHomeCommand}"/>
+            <Button HeightRequest="100" Text="Bus Routes" TextColor="White" BackgroundColor="Navy" Command="{Binding GoSecondCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

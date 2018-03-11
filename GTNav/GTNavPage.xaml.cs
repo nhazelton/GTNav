@@ -152,15 +152,15 @@ namespace GTNav {
             if (!walkPressed) { // if button is currently 'on'
                 if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
                     ridePressed = false;
-                    rideButton.BackgroundColor = Color.Green;
+                    rideButton.BackgroundColor = Color.LimeGreen;
                     rideButton.TextColor = Color.Black;
                 }
                 walkPressed = true;
                 walkButton.BackgroundColor = Color.White;
-                walkButton.TextColor = Color.Purple;
+                walkButton.TextColor = Color.Fuchsia;
             } else { // if it's not
                 walkPressed = false;
-                walkButton.BackgroundColor = Color.Purple;
+                walkButton.BackgroundColor = Color.Fuchsia;
                 walkButton.TextColor = Color.Black;
             }
         }
@@ -169,15 +169,15 @@ namespace GTNav {
             if (!ridePressed) { // if button is currently 'on'
                 if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
                     walkPressed = false;
-                    walkButton.BackgroundColor = Color.Purple;
+                    walkButton.BackgroundColor = Color.Fuchsia;
                     walkButton.TextColor = Color.Black;
                 }
                 ridePressed = true;
                 rideButton.BackgroundColor = Color.White;
-                rideButton.TextColor = Color.Green;
+                rideButton.TextColor = Color.LimeGreen;
             } else { // if it's not
                 ridePressed = false;
-                rideButton.BackgroundColor = Color.Green;
+                rideButton.BackgroundColor = Color.LimeGreen;
                 rideButton.TextColor = Color.Black;
             }
         }
