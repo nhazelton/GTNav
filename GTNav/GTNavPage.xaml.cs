@@ -82,11 +82,29 @@ namespace GTNav {
                 string destLong = loc.Longitude.ToString();
                 Debug.WriteLine(destLat);
                 Debug.WriteLine(destLong);
-                string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
-                Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
-                timeTask.Wait();
-                string timeString = timeTask.Result;
-                Debug.WriteLine(timeString);
+                if (ridePressed == true && walkPressed == false)
+                {
+                    string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&mode=driving" + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+                    Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
+                    timeTask.Wait();
+                    string timeString = timeTask.Result;
+                    Task<String> distTask = Task.Run(async () => await SendDistance(URL));
+                    distTask.Wait();
+                    string distString = distTask.Result;
+                    Debug.WriteLine(distString + " " + timeString);
+                }
+                else if (walkPressed == true && ridePressed == false)
+                {
+                    string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&mode=walking" + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+                    Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
+                    timeTask.Wait();
+                    string timeString = timeTask.Result;
+                    Task<String> distTask = Task.Run(async () => await SendDistance(URL));
+                    distTask.Wait();
+                    string distString = distTask.Result;
+                    Debug.WriteLine(distString + " " + timeString);
+                }
+                
             };
 
 
@@ -127,6 +145,20 @@ namespace GTNav {
                 var content = await response.Content.ReadAsStringAsync();
                 JToken token = JToken.Parse(content);
                 string time = token["rows"][0]["elements"][0]["duration"]["text"].ToString();
+                return time;
+            }
+            return "";
+        }
+
+        public async Task<String> SendDistance(string URL)
+        {
+            var uri = new Uri(URL);
+            var response = await client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                JToken token = JToken.Parse(content);
+                string time = token["rows"][0]["elements"][0]["distance"]["text"].ToString();
                 return time;
             }
             return "";
