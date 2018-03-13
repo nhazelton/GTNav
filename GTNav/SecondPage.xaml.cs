@@ -7,17 +7,13 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-//This is the menu seen when the Hamburger Menu is open
-
 namespace GTNav
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MenuPage : ContentPage
+    public partial class SecondPage : ContentPage
     {
-        public MenuPage()
+        public SecondPage()
         {
-            BindingContext = new MenuPageViewModel();
-            Title = "Menu";
             InitializeComponent();
         }
     }
