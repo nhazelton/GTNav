@@ -1,5 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Maps;
+using Xamarin.Forms.Xaml;
+
 
 using System.Collections.Generic;
 using System.Xml.Linq;
@@ -9,6 +11,7 @@ using System.IO;
 using System.Net.Http;
 using System.Reflection;
 using System.Linq;
+using System.Text;
 using System.Collections.ObjectModel;
 using System.Net;
 using System.Net.Http.Headers;
@@ -26,11 +29,14 @@ namespace GTNav {
         List<Location> locationList;
         CampusMap campusMap;
 
-        Button walkButton;
+        public Button walkButton;
         bool walkPressed = false;
 
-        Button rideButton;
+        public Button rideButton;
         bool ridePressed = false;
+
+        bool searchReady = false;
+        bool searchComplete = false;
 
         HttpClient client;
 
@@ -42,6 +48,8 @@ namespace GTNav {
 
             locations = new ObservableCollection<Location>(locationList);
             LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
+
+            
 
 
             searchBar = MySearchBar;
@@ -70,10 +78,9 @@ namespace GTNav {
                 Debug.WriteLine(e.NewTextValue);
             };
 
-            LocationSuggestions.ItemSelected += (sender, e) => {
+            LocationSuggestions.ItemSelected += async (sender, e) => {
                 Location loc = (Location)e.SelectedItem;
                 Debug.WriteLine(loc.ToString());
-
 
                 string startLat = "33.7746";
                 string startLong = "-84.39";
@@ -87,9 +94,10 @@ namespace GTNav {
                 timeTask.Wait();
                 string timeString = timeTask.Result;
                 Debug.WriteLine(timeString);
+
+                //Allow the walk and ride buttons to activate
+                searchReady = true;
             };
-
-
 
 
             campusMap = MyCampusMap;
@@ -113,7 +121,6 @@ namespace GTNav {
             
             rideButton = MyRideButton;
             rideButton.Clicked += OnRideButtonPressed; // OnRideButtonPressed happens when button is tapped -- see below
-
             // add future functionality code here
         }
 
@@ -148,37 +155,55 @@ namespace GTNav {
             return locations.ToList();
         }
 
+
+        //Needs cleaning later on when modifying
+        //Completely changed functionality
+        //At the moment there is no cool visual when pressing button, but it has functionality
+        //Passs on to a new page depending on what is selected
+
+        //activate if the button is presed and the search has been completed
         public void OnWalkButtonPressed(object sender, EventArgs e) {
-            if (!walkPressed) { // if button is currently 'on'
-                if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
-                    ridePressed = false;
-                    rideButton.BackgroundColor = Color.LimeGreen;
-                    rideButton.TextColor = Color.Black;
-                }
-                walkPressed = true;
-                walkButton.BackgroundColor = Color.White;
-                walkButton.TextColor = Color.Fuchsia;
-            } else { // if it's not
-                walkPressed = false;
-                walkButton.BackgroundColor = Color.Fuchsia;
-                walkButton.TextColor = Color.Black;
+            if (searchReady) { // if button is currently 'on'
+            //    if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
+            //        ridePressed = false;
+            //        rideButton.BackgroundColor = Color.LimeGreen;
+            //        rideButton.TextColor = Color.Black;
+            //    }
+                App.NavigationPage.Navigation.PushAsync(new WalkPage());
+            //    walkPressed = true;
+            //    walkButton.BackgroundColor = Color.White;
+            //    walkButton.TextColor = Color.Fuchsia;
+            }// else { // if it's not
+            //    walkPressed = false;
+            //    walkButton.BackgroundColor = Color.Fuchsia;
+            //    walkButton.TextColor = Color.Black;
+            //}
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
             }
         }
 
+        //activate if the button is presed and the search has been completed
         public void OnRideButtonPressed(object sender, EventArgs e) {
-            if (!ridePressed) { // if button is currently 'on'
-                if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
-                    walkPressed = false;
-                    walkButton.BackgroundColor = Color.Fuchsia;
-                    walkButton.TextColor = Color.Black;
-                }
-                ridePressed = true;
-                rideButton.BackgroundColor = Color.White;
-                rideButton.TextColor = Color.LimeGreen;
-            } else { // if it's not
-                ridePressed = false;
-                rideButton.BackgroundColor = Color.LimeGreen;
-                rideButton.TextColor = Color.Black;
+            if (searchReady) { // if button is currently 'on'
+            //    if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
+            //        walkPressed = false;
+            //        walkButton.BackgroundColor = Color.Fuchsia;
+            //        walkButton.TextColor = Color.Black;
+            //    }
+                App.NavigationPage.Navigation.PushAsync(new RidePage());
+                //ridePressed = true;
+            //    rideButton.BackgroundColor = Color.White;
+            //    rideButton.TextColor = Color.LimeGreen;
+            }// else { // if it's not
+            //    ridePressed = false;
+            //    rideButton.BackgroundColor = Color.LimeGreen;
+            //    rideButton.TextColor = Color.Black;
+            //}
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
             }
         }
 

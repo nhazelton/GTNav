@@ -31,8 +31,7 @@ namespace GTNav
 
 
             InitializeComponent();
-
-            //MainPage = new GTNavPage();
+            
         }
 
         protected override void OnStart()
