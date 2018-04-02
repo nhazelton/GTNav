@@ -79,5 +79,3 @@ C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.RootPage.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csproj.CopyComplete
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.dll
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.pdb
-C:\Users\GrumpyGil\GTNav\GTNav\obj\Debug\GTNav.RidePage.xaml.g.cs
-C:\Users\GrumpyGil\GTNav\GTNav\obj\Debug\GTNav.WalkPage.xaml.g.cs
