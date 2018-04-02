@@ -37,7 +37,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Button x:Name="MyWalkButton" Grid.Row="0" Grid.Column="0" Text="Walk" BackgroundColor="Fuchsia"/>
+            <!--Command="{Binding GoWalkCommand}"-->
             <Button x:Name="MyRideButton" Grid.Row="0" Grid.Column="1" Text="Ride" BackgroundColor="LimeGreen"/>
+            <!--Command="{Binding GoRideCommand}"-->
         </Grid>
     </StackLayout>
 </ContentPage>
