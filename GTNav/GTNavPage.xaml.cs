@@ -30,13 +30,10 @@ namespace GTNav {
         CampusMap campusMap;
 
         public Button walkButton;
-        bool walkPressed = false;
 
         public Button rideButton;
-        bool ridePressed = false;
 
         bool searchReady = false;
-        bool searchComplete = false;
 
         HttpClient client;
 

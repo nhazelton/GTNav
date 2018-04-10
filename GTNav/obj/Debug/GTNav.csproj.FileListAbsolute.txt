@@ -54,3 +54,5 @@ C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.csproj.CopyComplete
 C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.dll
 C:/Users/Nate/Documents/GitHub/GTNav/GTNav/obj/Debug/GTNav.pdb
 /Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.SecondPage.xaml.g.cs
+/Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.RidePage.xaml.g.cs
+/Users/kevin/Projects/GTNav/GTNav/obj/Debug/GTNav.WalkPage.xaml.g.cs
