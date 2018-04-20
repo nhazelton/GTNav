@@ -18,13 +18,16 @@ namespace GTNav
         public Button walkButton;
         public Button directionsButton;
 
-        public WalkPage()
+
+        public WalkPage(string walkTime)
         {
             InitializeComponent();
             backButton = ReturnButton;
             walkButton = OnwardButton;
             directionsButton = DirectionsButton;
             backButton.Clicked += OnBackButtonPressed;
+            walkEstimate.Text = walkTime;
+
         }
 
         //back button returns to the main page
