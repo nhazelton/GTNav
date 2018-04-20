@@ -6,10 +6,10 @@
     <ContentPage.Content BackgroundColor="LightGray">
         <StackLayout>
             <Label Text="Happy Walking"
+                Font="40"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 x:Name="walkEstimate"/>
-
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

@@ -30,12 +30,10 @@ namespace GTNav {
         CampusMap campusMap;
 
         Location loc;
-
         public Button walkButton;
-
         public Button rideButton;
-
         bool searchReady = false;
+
 
         HttpClient client;
 
@@ -93,13 +91,6 @@ namespace GTNav {
                 Radius = 100
             };
 
-            var culc = new Pin {
-                Type = PinType.Place,
-                Position = new Position(33.774671, -84.396374),
-                Label = "Clough Undergraduate Learning Commons",
-            };
-
-            campusMap.Pins.Add(culc);
             campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(0.6)));
 
             walkButton = MyWalkButton;
@@ -158,7 +149,7 @@ namespace GTNav {
               //        rideButton.TextColor = Color.Black;
               //    }
                 string walkTime = await getWalkingTime();
-                await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime));
+                await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime, loc));
                 //    walkPressed = true;
                 //    walkButton.BackgroundColor = Color.White;
                 //    walkButton.TextColor = Color.Fuchsia;
