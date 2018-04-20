@@ -2,7 +2,7 @@
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
 
-
+using Plugin.Geolocator;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Diagnostics;
@@ -28,6 +28,8 @@ namespace GTNav {
         ObservableCollection<Location> locations;
         List<Location> locationList;
         CampusMap campusMap;
+
+        Location loc;
 
         public Button walkButton;
 
@@ -74,22 +76,8 @@ namespace GTNav {
             };
 
             LocationSuggestions.ItemSelected += (sender, e) => {
-                Location loc = (Location)e.SelectedItem;
+                loc = (Location)e.SelectedItem;
                 Debug.WriteLine(loc.ToString());
-
-
-                string startLat = "33.7746";
-                string startLong = "-84.39";
-
-                string destLat = loc.Latititude.ToString();
-                string destLong = loc.Longitude.ToString();
-                Debug.WriteLine(destLat);
-                Debug.WriteLine(destLong);
-                string URL = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
-                Task<String> timeTask = Task.Run(async () => await SendLocations(URL));
-                timeTask.Wait();
-                string timeString = timeTask.Result;
-                Debug.WriteLine(timeString);
                 
                 //Allow the walk and ride buttons to activate
                 searchReady = true;
@@ -160,7 +148,7 @@ namespace GTNav {
         //Passs on to a new page depending on what is selected
 
         //activate if the button is presed and the search has been completed
-        public void OnWalkButtonPressed(object sender, EventArgs e)
+        public async void OnWalkButtonPressed(object sender, EventArgs e)
         {
             if (searchReady)
             { // if button is currently 'on'
@@ -169,7 +157,8 @@ namespace GTNav {
               //        rideButton.BackgroundColor = Color.LimeGreen;
               //        rideButton.TextColor = Color.Black;
               //    }
-                App.NavigationPage.Navigation.PushAsync(new WalkPage());
+                string walkTime = await getWalkingTime();
+                await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime));
                 //    walkPressed = true;
                 //    walkButton.BackgroundColor = Color.White;
                 //    walkButton.TextColor = Color.Fuchsia;
@@ -182,6 +171,29 @@ namespace GTNav {
             {
                 DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
             }
+        }
+
+        public async Task<String> getWalkingTime() {
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+            Debug.WriteLine("hello");
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(0.01), null, true);
+
+
+            Debug.WriteLine("hello");
+            double startLat = position.Latitude;
+            double startLong = position.Longitude;
+
+            string destLat = loc.Latititude.ToString();
+            string destLong = loc.Longitude.ToString();
+            Debug.WriteLine(startLat);
+            Debug.WriteLine(startLong);
+            string URLwalk = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=walking&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+            Task<String> timeTask = Task.Run(async () => await SendLocations(URLwalk));
+            timeTask.Wait();
+            string walkTimeString = timeTask.Result;
+            Debug.WriteLine(walkTimeString);
+            return walkTimeString;
         }
 
         //activate if the button is presed and the search has been completed

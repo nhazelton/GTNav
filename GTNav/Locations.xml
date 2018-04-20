@@ -3,4 +3,7 @@
     <Location Name="Clough Undergraduate Learning Commons" Latitude="33.774671" Longitude="-84.396374"/>
     <Location Name="Howey Physics Building" Latitude="33.777422" Longitude="-84.398096"/>
     <Location Name="Campus Recreation Center" Latitude="33.775475" Longitude="-84.403157"/>
+    <Location Name="Instructional Center" Latitude="33.775439" Longitude="-84.401270"/>
+    <Location Name="Klaus Advanced Computing Building" Latitude="33.777128" Longitude="-84.396237"/>
+    <Location Name="College of Computing Building" Latitude="33.777406" Longitude="-84.397261"/>
 </Locations>
