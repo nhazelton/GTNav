@@ -1,9 +1,95 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Locations>
+    <!-- Locations that crash the app
+    <Location Name="Georgia Tech Research Institute Electro Optical Systems Laboratory" Latitude="33.779983" Longitude="33.779983"/>
+    -->
     <Location Name="Clough Undergraduate Learning Commons" Latitude="33.774671" Longitude="-84.396374"/>
     <Location Name="Howey Physics Building" Latitude="33.777422" Longitude="-84.398096"/>
     <Location Name="Campus Recreation Center" Latitude="33.775475" Longitude="-84.403157"/>
     <Location Name="Instructional Center" Latitude="33.775439" Longitude="-84.401270"/>
     <Location Name="Klaus Advanced Computing Building" Latitude="33.777128" Longitude="-84.396237"/>
     <Location Name="College of Computing Building" Latitude="33.777406" Longitude="-84.397261"/>
+    <Location Name="Van Leer Building" Latitude="33.775974" Longitude="-84.397134"/>
+    <Location Name="Georgia Tech Police Department" Latitude="33.778938" Longitude="-84.401275"/>
+    <Location Name="Glenn Residence Hall" Latitude="33.773433" Longitude="-84.391562"/>
+    <Location Name="Towers Residence Hall" Latitude="33.773680" Longitude="-84.391003"/>
+    <Location Name="Cloudman Residence Hall" Latitude="33.772761" Longitude="-84.391728"/>
+    <Location Name="Brittain Dining Hall" Latitude="33.772439" Longitude="-84.391448"/>
+    <Location Name="Harrison Residence Hall" Latitude="33.772821" Longitude="-84.390903"/>
+    <Location Name="Howell Residence Hall" Latitude="33.772140" Longitude="-84.390931"/>
+    <Location Name="Smith Residence Hall" Latitude="33.771706" Longitude="-84.391277"/>
+    <Location Name="North Avenue Dining Hall" Latitude="33.770969" Longitude="-84.391392"/>
+    <Location Name="Tech Tower" Latitude="33.772340" Longitude="-84.394703"/>
+    <Location Name="JS Coon Building" Latitude="33.772707" Longitude="-84.395693"/>
+    <Location Name="Swann Building" Latitude="33.771712" Longitude="-84.395299"/>
+    <Location Name="Office of International Education" Latitude="33.772080" Longitude="-84.395367"/>
+    <Location Name="Engineering Science and Mechanics Building" Latitude="33.772025" Longitude="-84.395745"/>
+    <Location Name="Daniel Guggenheim Building" Latitude="33.771588" Longitude="-84.395773"/>
+    <Location Name="Department of Aerospace Engineering" Latitude="33.772105" Longitude="-84.396055"/>
+    <Location Name="Weber Space Science and Technology Building" Latitude="33.772755" Longitude="-84.396433"/>
+    <Location Name="Skiles Classroom Building" Latitude="33.773667" Longitude="-84.396010"/>
+    <Location Name="Georgia Tech Library" Latitude="33.774278" Longitude="-84.395672"/>
+    <Location Name="College of Architecture" Latitude="33.776117" Longitude="-84.395730"/>
+    <Location Name="College of Design" Latitude="33.776117" Longitude="-84.395730"/>
+    <Location Name="Mason Building" Latitude="33.776695" Longitude="-84.398732"/>
+    <Location Name="Department of Biology" Latitude="33.777992" Longitude="-84.397163"/>
+    <Location Name="Cherry Emerson Building" Latitude="33.777992" Longitude="-84.397163"/>
+    <Location Name="Ford Environmental Science and Technology Building" Latitude="33.778844" Longitude="-84.395981"/>
+    <Location Name="Molecular Science and Engineering Building" Latitude="33.779796" Longitude="-84.396674"/>
+    <Location Name="Russ Chandler Stadium" Latitude="33.777376" Longitude="-84.395237"/>
+    <Location Name="Mary R and John Brock Football Practice Facility" Latitude="33.778749" Longitude="-84.395278"/>
+    <Location Name="Shirley Clements Mewborn Field" Latitude="33.779255" Longitude="-84.393333"/>
+    <Location Name="Griffin Track" Latitude="33.780127" Longitude="-84.393793"/>
+    <Location Name="McCamish Pavilion" Latitude="33.780699" Longitude="-84.392841"/>
+    <Location Name="Freeman Residence Hall" Latitude="33.777481" Longitude="-84.403881"/>
+    <Location Name="Montag Residence Hall" Latitude="33.777867" Longitude="-84.403903"/>
+    <Location Name="Fitten Residence Hall" Latitude="33.778203" Longitude="-84.403741"/>
+    <Location Name="Couch Building" Latitude="33.778237" Longitude="-84.404434"/>
+    <Location Name="Fulmer Residence Hall" Latitude="33.778627" Longitude="-84.403957"/>
+    <Location Name="Georgia Tech Office of Conference Services" Latitude="33.778850" Longitude="-84.403956"/>
+    <Location Name="Armstrong Residence Hall" Latitude="33.779196" Longitude="-84.403641"/>
+    <Location Name="Caldwell Residence Hall" Latitude="33.778865" Longitude="-84.404415"/>
+    <Location Name="Nelson Shell" Latitude="33.778166" Longitude="-84.405509"/>
+    <Location Name="Zbar Residence Hall" Latitude="33.777555" Longitude="-84.404820"/>
+    <Location Name="Maulding Residence Hall" Latitude="33.776985" Longitude="-84.405702"/>
+    <Location Name="Eigth Stree Apartments" Latitude="33.780122" Longitude="-84.405088"/>
+    <Location Name="Crecine Student Apartments" Latitude="33.779887" Longitude="-84.403156"/>
+    <Location Name="Center Street North" Latitude="33.780313" Longitude="-84.402313"/>
+    <Location Name="Center Street South" Latitude="33.779837" Longitude="-84.401846"/>
+    <Location Name="Love Manufacturing Building (MRDC)" Latitude="33.776681" Longitude="-84.401830"/>
+    <Location Name="Gilbert Hillhouse Boggs Bulding" Latitude="33.775682" Longitude="-84.399820"/>
+    <Location Name="Ferst Center for the Arts" Latitude="33.775033" Longitude="-84.399227"/>
+    <Location Name="Bunger Henry Bulding" Latitude="33.775620" Longitude="-84.398246"/>
+    <Location Name="Allen Building" Latitude="33.776110" Longitude="33.776110"/>
+    <Location Name="Old Civil Engineering Building" Latitude="33.774150" Longitude="-84.394681"/>
+    <Location Name="DM Smith Building" Latitude="33.773626" Longitude="-84.395146"/>
+    <Location Name="Georgia Tech Bursar Office" Latitude="33.772882" Longitude="-84.394155"/>
+    <Location Name="Bobby Dodd Stadium" Latitude="33.772860" Longitude="-84.392951"/>
+    <Location Name="North Avenue Apartments" Latitude="33.770967" Longitude="-84.391654"/>
+    <Location Name="Phi Sigma Kappa Fraternity" Latitude="33.777106" Longitude="-84.391859"/>
+    <Location Name="Alpha Xi Delta Sorority" Latitude="33.777846" Longitude="-84.391891"/>
+    <Location Name="Theta Chi Fraternity" Latitude="33.777631" Longitude="-84.392291"/>
+    <Location Name="Zeta Beta Tau Fraternity" Latitude="33.777935" Longitude="-84.392459"/>
+    <Location Name="Kappa Sigma Fraternity" Latitude="33.777951" Longitude="-84.393439"/>
+    <Location Name="Phi Gamma Delta Fraternity" Latitude="33.777646" Longitude="-84.393402"/>
+    <Location Name="Zeta Tau Alpha Sorority" Latitude="33.777170" Longitude="-84.393467"/>
+    <Location Name="Alpha Gamma Delta Sorority" Latitude="33.777058" Longitude="-84.393066"/>
+    <Location Name="Tau Kappa Epsilon Fraternity" Latitude="33.777094" Longitude="-84.392398"/>
+    <Location Name="Delta Upsilon Fraternity" Latitude="33.776704" Longitude="-84.392283"/>
+    <Location Name="Lambda Chi Alpha Fraternity" Latitude="33.776295" Longitude="-84.392268"/>
+    <Location Name="Sigma Chi Fraternity" Latitude="33.775659" Longitude="-84.392253"/>
+    <Location Name="Delta Sigma Phi Fraternity" Latitude="33.775780" Longitude="-84.392582"/>
+    <Location Name="The Wesley Foundation" Latitude="33.776092" Longitude="-84.393384"/>
+    <Location Name="Sigma Phi Epsilon Fraternity" Latitude="33.776658" Longitude="-84.393389"/>
+    <Location Name="Delta Chi Fraternity" Latitude="33.776712" Longitude="-84.392971"/>
+    <Location Name="Georgia Tech Campus Christain Fellowship" Latitude="33.775573" Longitude="-84.391627"/>
+    <Location Name="Theta Xi Fraternity" Latitude="33.775856" Longitude="-84.391773"/>
+    <Location Name="Phi Kappa Sigma Fraternity" Latitude="33.776115" Longitude="-84.391834"/>
+    <Location Name="Kappa Alpha Fraternity" Latitude="33.776540" Longitude="-84.391828"/>
+    <Location Name="Scheller College of Business" Latitude="33.776689" Longitude="-84.388087"/>
+    <Location Name="Bill Moore Student Success Center" Latitude="33.772450" Longitude="-84.394030"/>
+    <Location Name="Georgia Tech Student Center" Latitude="33.774166" Longitude="-84.398713"/>
+
+    
+    
 </Locations>
