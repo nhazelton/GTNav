@@ -1,5 +1,10 @@
 FormsViewGroup
 GTNav
+Plugin.CurrentActivity
+Plugin.Geolocator.Abstractions
+Plugin.Geolocator
+Plugin.Permissions.Abstractions
+Plugin.Permissions
 System.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations
@@ -28,3 +33,4 @@ Xamarin.GooglePlayServices.Tasks
 Xamarin.GooglePlayServices.Base
 Xamarin.GooglePlayServices.Maps
 System.Diagnostics.Tools
+Newtonsoft.Json

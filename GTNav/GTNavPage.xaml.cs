@@ -18,6 +18,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 
 
 namespace GTNav {
@@ -34,6 +35,8 @@ namespace GTNav {
         public Button rideButton;
         bool searchReady = false;
 
+        enum Routes {Red, Blue, Green, Trolley, Emory, MidnightRambler, TSExpress};
+
 
         HttpClient client;
 
@@ -46,6 +49,7 @@ namespace GTNav {
             locations = new ObservableCollection<Location>(locationList);
             LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
 
+            plotBuses(Routes.Red);
 
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
@@ -101,6 +105,7 @@ namespace GTNav {
 
             // add future functionality code here
         }
+
 
 
         public async Task<String> SendLocations(string URL)
@@ -212,6 +217,21 @@ namespace GTNav {
             }
         }
 
+        private async void plotBuses(Routes route) { // Plots the current location of the buses of a specific route
+            string URL = "http://m.gatech.edu:80/api/buses/position";
+            var uri = new Uri(URL);
+            var response = await client.GetAsync(uri);
+            HttpContent content = response.Content;
+            string mycontent = await content.ReadAsStringAsync();
+            Bus[] items = JsonConvert.DeserializeObject<Bus[]>(mycontent);
+
+            foreach(Bus item in items) {
+                Debug.WriteLine(item.id);   
+            }
+
+        }
+
     } // GTNavPage
+
 
 } // GTNav
