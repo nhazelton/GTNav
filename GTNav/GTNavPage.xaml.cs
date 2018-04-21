@@ -35,7 +35,7 @@ namespace GTNav {
         public Button rideButton;
         bool searchReady = false;
 
-        enum Routes {Red, Blue, Green, Trolley, Emory, MidnightRambler, TSExpress};
+        enum Routes {red, blue, green, trolley, emory, midnightRambler, TSExpress};
 
 
         HttpClient client;
@@ -48,8 +48,6 @@ namespace GTNav {
 
             locations = new ObservableCollection<Location>(locationList);
             LocationSuggestions.ItemsSource = locations; // binds listview in XAML to locations collection
-
-            plotBuses(Routes.Red);
 
             searchBar = MySearchBar;
             String searchQuery; // changes to what the user searched for
@@ -89,6 +87,7 @@ namespace GTNav {
 
 
             campusMap = MyCampusMap;
+            plotBuses(Routes.red, campusMap);
             var sampleMarker = new Position(33.774671, -84.396374);
             campusMap.Marker = new BusMarker {
                 Position = sampleMarker,
@@ -217,7 +216,7 @@ namespace GTNav {
             }
         }
 
-        private async void plotBuses(Routes route) { // Plots the current location of the buses of a specific route
+        private async void plotBuses(Routes route, CampusMap map) { // Plots the current location of the buses of a specific route
             string URL = "http://m.gatech.edu:80/api/buses/position";
             var uri = new Uri(URL);
             var response = await client.GetAsync(uri);
@@ -226,9 +225,20 @@ namespace GTNav {
             Bus[] items = JsonConvert.DeserializeObject<Bus[]>(mycontent);
 
             foreach(Bus item in items) {
-                Debug.WriteLine(item.id);   
+                if (item.route != null) {
+                    Debug.WriteLine(item.route.ToString());
+                    if (item.route == route.ToString())
+                    {
+                        var pin = new Pin
+                        {
+                            Type = PinType.Place,
+                            Position = new Position(item.lat, item.lng),
+                            Label = item.jobID,
+                        };
+                        map.Pins.Add(pin);
+                    }
+                }
             }
-
         }
 
     } // GTNavPage
