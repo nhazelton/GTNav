@@ -135,6 +135,8 @@ C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Pl
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.dll
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\GTNav.pdb
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
@@ -145,6 +147,9 @@ C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xa
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Maps.xml
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.xml
+C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.pdb
+C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.xml
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Ethan\Source\Repos\GTNav\iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
