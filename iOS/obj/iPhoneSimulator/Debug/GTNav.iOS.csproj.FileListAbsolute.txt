@@ -192,3 +192,8 @@ C:\Users\Ethan\Source\Repos\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csproj
 C:\Users\Ethan\Source\Repos\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Ethan\Source\Repos\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.exe
 C:\Users\Ethan\Source\Repos\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.pdb
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.dll
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.pdb
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\Plugin.Geolocator.xml

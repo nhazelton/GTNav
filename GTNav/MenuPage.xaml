@@ -5,7 +5,9 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#808080">
             <Button HeightRequest="100" Text="Main Map" TextColor="#262626" BackgroundColor="#eeb211" Command="{Binding GoHomeCommand}"/>
-            <Button HeightRequest="100" Text="Bus Routes" TextColor="#e5e5e5" BackgroundColor="#00254c" Command="{Binding GoSecondCommand}"/>
+            <Button HeightRequest="100" Text="Red Route" TextColor="#ffffff" BackgroundColor="#ff545c" Command="{Binding GoRedCommand}"/>
+            <Button HeightRequest="100" Text="Blue Route" TextColor="#ffffff" BackgroundColor="#30a8ff" Command="{Binding GoBlueCommand}"/>
+            <Button HeightRequest="100" Text="Green Route" TextColor="#ffffff" BackgroundColor="#30ff71" Command="{Binding GoGreenCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
