@@ -10,9 +10,13 @@ using Xamarin.Forms.Maps;
 namespace GTNav {
 
     public class CampusMap : Map {
-
+        public List<Position> RouteCoordinates { get; set; }
         public BusMarker Marker { get; set; }
 
+        public CampusMap()
+        {
+            RouteCoordinates = new List<Position>();
+        }
     }
 
 }
