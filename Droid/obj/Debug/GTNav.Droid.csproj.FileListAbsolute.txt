@@ -179,7 +179,6 @@ C:\Users\Ethan\Source\Repos\GTNav\Droid\obj\Debug\android\assets\Plugin.Permissi
 C:\Users\Ethan\Source\Repos\GTNav\Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Ethan\Source\Repos\GTNav\Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Ethan\Source\Repos\GTNav\Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\GTNav.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Base.dll
@@ -245,6 +244,7 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\Plugin.Geolocator.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\Plugin.Geolocator.xml
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\Plugin.Geolocator.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\GTNav.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\GTNav.Droid.csproj.CoreCompileInputs.cache
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\GTNav.Droid.csproj.CopyComplete
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\GTNav.Droid.dll
@@ -318,8 +318,6 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Servi
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\GTNav.Droid.dll
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\GTNav.dll
-C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\GTNav.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\GTNav.Droid.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\GTNav.dll.mdb
