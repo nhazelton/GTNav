@@ -46,6 +46,7 @@
     <Compile Include="GreenRoutePage.xaml.cs">
       <DependentUpon>GreenRoutePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomPin.cs" />
     <Compile Include="GTNavPage.xaml.cs">
       <DependentUpon>GTNavPage.xaml</DependentUpon>
     </Compile>

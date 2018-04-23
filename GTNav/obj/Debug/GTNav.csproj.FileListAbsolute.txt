@@ -47,7 +47,6 @@ C:\Users\Ethan\Source\Repos\GTNav\GTNav\bin\Debug\Plugin.Geolocator.Abstractions
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\bin\Debug\Plugin.Geolocator.pdb
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\bin\Debug\Plugin.Geolocator.xml
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.csprojResolveAssemblyReference.cache
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.csproj.CoreCompileInputs.cache
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.App.xaml.g.cs
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.GTNavPage.xaml.g.cs

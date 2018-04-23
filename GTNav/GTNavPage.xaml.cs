@@ -94,6 +94,13 @@ namespace GTNav {
                 Position = sampleMarker,
                 Radius = 100
             };
+            var pin = new CustomPin
+            {
+                Position = new Position(33.770053, -84.392149),
+                Label = ""
+            };
+            campusMap.CustomPins = new List<CustomPin> { pin };
+            campusMap.Pins.Add(pin);
 
             campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(0.6)));
 
