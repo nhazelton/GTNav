@@ -171,7 +171,7 @@ namespace GTNav.Droid {
             //routeOptions.Add(new LatLng(33.774375, -84.402450));
             //routeOptions.Add(new LatLng(33.773929, -84.402063));
             //routeOptions.Add(new LatLng(33.773688, -84.401366));
-            foreach (var position in greenCoordinates)
+            foreach (var position in redCoordinates)
             {
                 routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
             }

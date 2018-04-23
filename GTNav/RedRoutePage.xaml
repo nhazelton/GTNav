@@ -5,12 +5,6 @@
         xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
         x:Class="GTNav.RedRoutePage">
     <ContentPage.Content>
-        <StackLayout>
-            <local:CampusMap
-                x:Name="MyRedMap"
-                IsShowingUser="true"
-                MapType="Street"
-                />
-        </StackLayout>
+        <local:RedCampusMap x:Name="redCampusMap" MapType="Street" />
     </ContentPage.Content>
 </ContentPage>

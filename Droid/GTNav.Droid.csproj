@@ -161,6 +161,7 @@
   <ItemGroup>
     <Compile Include="CampusMapRenderer.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="RedCampusMapRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainApplication.cs" />
