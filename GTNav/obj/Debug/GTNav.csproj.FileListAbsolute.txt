@@ -69,8 +69,6 @@ C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.WalkPage.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.RedRoutePage.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.BlueRoutePage.xaml.g.cs
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.GreenRoutePage.xaml.g.cs
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.dll
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\GTNav.dll
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\GTNav.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\Newtonsoft.Json.dll
@@ -90,4 +88,5 @@ C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\Plugin.Geolocator.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\Plugin.Geolocator.xml
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csproj.CopyComplete
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csprojResolveAssemblyReference.cache
+C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.dll
+C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.pdb

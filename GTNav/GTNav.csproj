@@ -36,6 +36,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BlueCampusMap.cs" />
     <Compile Include="BlueRoutePage.xaml.cs">
       <DependentUpon>BlueRoutePage.xaml</DependentUpon>
     </Compile>

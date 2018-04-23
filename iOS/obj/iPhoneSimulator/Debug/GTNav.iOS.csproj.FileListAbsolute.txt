@@ -133,6 +133,7 @@ C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\actool\_Bundl
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\GTNav.iOS.exe
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\GTNav.iOS.pdb
@@ -193,7 +194,6 @@ C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Fo
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csprojResolveAssemblyReference.cache
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.csproj.CopyComplete
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.exe
 C:\Users\Nate\Documents\GitHub\GTNav\iOS\obj\iPhoneSimulator\Debug\GTNav.iOS.pdb

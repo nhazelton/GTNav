@@ -159,6 +159,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlueCampusMapRenderer.cs" />
     <Compile Include="CampusMapRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RedCampusMapRenderer.cs" />

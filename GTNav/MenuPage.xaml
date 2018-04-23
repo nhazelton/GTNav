@@ -7,7 +7,7 @@
             <Button HeightRequest="100" Text="Main Map" TextColor="#262626" BackgroundColor="#eeb211" Command="{Binding GoHomeCommand}"/>
             <Button HeightRequest="100" Text="Red Route" TextColor="#ffffff" BackgroundColor="#ff545c" Command="{Binding GoRedCommand}"/>
             <Button HeightRequest="100" Text="Blue Route" TextColor="#ffffff" BackgroundColor="#30a8ff" Command="{Binding GoBlueCommand}"/>
-            <Button HeightRequest="100" Text="Green Route" TextColor="#ffffff" BackgroundColor="#30ff71" Command="{Binding GoGreenCommand}"/>
+            <Button HeightRequest="100" Text="Green Route" TextColor="#000000" BackgroundColor="#30ff71" Command="{Binding GoGreenCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
