@@ -183,7 +183,11 @@ namespace GTNav.Droid {
 
             //routeOptions.InvokeColor(0x33DD1D36); // red
             //routeOptions.InvokeColor(0x6600a86b); // green
-            foreach (var position in blueCoordinates)
+            foreach (var position in redCoordinates)
+            {
+                routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
+            }
+            foreach (var position in greenCoordinates)
             {
                 routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
             }
