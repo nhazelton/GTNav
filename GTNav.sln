@@ -10,6 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTNav.Droid", "Droid\GTNav.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9954DC58-FED6-41CD-8252-0D55DB89C6B6}"
 	ProjectSection(SolutionItems) = preProject
+		Droid\Assets\BusStop_blue.png = Droid\Assets\BusStop_blue.png
 		GTNav\CustomPin.cs = GTNav\CustomPin.cs
 	EndProjectSection
 EndProject

@@ -84,3 +84,4 @@ C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.RidePage.xaml.g.cs
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.WalkPage.xaml.g.cs
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.dll
 C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.pdb
+C:\Users\Ethan\Source\Repos\GTNav\GTNav\obj\Debug\GTNav.csprojResolveAssemblyReference.cache
