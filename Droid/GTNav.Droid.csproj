@@ -161,6 +161,7 @@
   <ItemGroup>
     <Compile Include="BlueCampusMapRenderer.cs" />
     <Compile Include="CampusMapRenderer.cs" />
+    <Compile Include="GreenCampusMapRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RedCampusMapRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

@@ -42,6 +42,7 @@
     </Compile>
     <Compile Include="BusMarker.cs" />
     <Compile Include="CampusMap.cs" />
+    <Compile Include="GreenCampusMap.cs" />
     <Compile Include="GreenRoutePage.xaml.cs">
       <DependentUpon>GreenRoutePage.xaml</DependentUpon>
     </Compile>

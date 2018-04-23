@@ -90,3 +90,4 @@ C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csproj.CopyComplete
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.dll
 C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.pdb
+C:\Users\Nate\Documents\GitHub\GTNav\GTNav\obj\Debug\GTNav.csprojResolveAssemblyReference.cache
