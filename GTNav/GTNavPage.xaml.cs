@@ -33,6 +33,7 @@ namespace GTNav {
         Location loc;
         public Button walkButton;
         public Button rideButton;
+        public Button fastButton;
         bool searchReady = false;
 
         enum Routes {Red, Blue, Green, Trolley, Emory, MidnightRambler, TSExpress};
@@ -193,6 +194,9 @@ namespace GTNav {
             rideButton = MyRideButton;
             rideButton.Clicked += OnRideButtonPressed; // OnRideButtonPressed happens when button is tapped -- see below
 
+            fastButton = MyFastButton;
+            fastButton.Clicked += OnFastButtonPressed;
+
             // add future functionality code here
         }
 
@@ -232,6 +236,35 @@ namespace GTNav {
         //Completely changed functionality
         //At the moment there is no cool visual when pressing button, but it has functionality
         //Passs on to a new page depending on what is selected
+
+        public async void OnFastButtonPressed(object sender, EventArgs e)
+        {
+            if (searchReady)
+            {
+                string walkTime = await getWalkingTime();
+                string rideTime = await getRidingTime();
+                string subWalkTime = walkTime.Substring(0, 2); // we take these substrings to chop off the 'mins' -- we have to be confident that travel time will not exceed 99
+                string subRideTime = rideTime.Substring(0, 2);
+
+                int walkMins = 0;
+                int rideMins = 0;
+
+                Int32.TryParse(subWalkTime, out walkMins);
+                Int32.TryParse(subRideTime, out rideMins);
+
+                Debug.WriteLine(walkMins);
+                Debug.WriteLine(rideMins);
+
+                if (walkMins <= rideMins) // on ties we say walk. help the environment!
+                {
+                    await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime, loc));
+                }
+                else
+                {
+                    await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
+                }
+            }
+        }
 
         //activate if the button is presed and the search has been completed
         public async void OnWalkButtonPressed(object sender, EventArgs e)
