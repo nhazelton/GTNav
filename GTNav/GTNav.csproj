@@ -38,6 +38,7 @@
     </Compile>
     <Compile Include="BusMarker.cs" />
     <Compile Include="CampusMap.cs" />
+    <Compile Include="CustomPin.cs" />
     <Compile Include="GTNavPage.xaml.cs">
       <DependentUpon>GTNavPage.xaml</DependentUpon>
     </Compile>

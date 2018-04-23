@@ -8,6 +8,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTNav.iOS", "iOS\GTNav.iOS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTNav.Droid", "Droid\GTNav.Droid.csproj", "{8F9030EF-2AAB-474A-A717-1BB600FBC809}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9954DC58-FED6-41CD-8252-0D55DB89C6B6}"
+	ProjectSection(SolutionItems) = preProject
+		GTNav\CustomPin.cs = GTNav\CustomPin.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

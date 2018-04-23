@@ -29,11 +29,22 @@ namespace GTNav.Droid {
         List<Position> redCoordinates = new List<Position>();
         List<Position> greenCoordinates = new List<Position>();
         List<Position> trolleyCoordinates = new List<Position>();
+        List<CustomPin> customPins;
         BusMarker marker;
 
 
         public CampusMapRenderer(Context context) : base(context) {
             // nothing ¯\_(ツ)_/¯
+        }
+
+        protected override MarkerOptions CreateMarker(Pin pin)
+        {
+            var marker = new MarkerOptions();
+            marker.SetPosition(new LatLng(pin.Position.Latitude, pin.Position.Longitude));
+            marker.SetTitle(pin.Label);
+            marker.SetSnippet(pin.Address);
+            marker.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueAzure));
+            return marker;
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Map> e) {
@@ -43,6 +54,7 @@ namespace GTNav.Droid {
                 var formsMap = (CampusMap)e.NewElement;
                 //routeCoordinates = formsMap.RouteCoordinates;
                 //marker = formsMap.Marker;
+                customPins = formsMap.CustomPins;
                 Control.GetMapAsync(this);
             }
         }
@@ -137,7 +149,7 @@ namespace GTNav.Droid {
             greenCoordinates.Add(new Position(33.781522, -84.399177));
             greenCoordinates.Add(new Position(33.781586, -84.404166));
             greenCoordinates.Add(new Position(33.784783, -84.406075));
-            greenCoordinates.Add(new Position(33.786210, -84.406042)); // 14th
+            greenCoordinates.Add(new Position(33.786210, -84.406042)); // 14th st
             greenCoordinates.Add(new Position(33.786188, -84.397254));
             greenCoordinates.Add(new Position(33.786538, -84.393255));
             greenCoordinates.Add(new Position(33.786537, -84.391980));
@@ -159,19 +171,9 @@ namespace GTNav.Droid {
 
             PolylineOptions routeOptions = new PolylineOptions(); // route tracing, default to blue for now
             routeOptions.InvokeColor(0x3f75A2FF);
-            //routeOptions.Add(new LatLng(33.771282, -84.392072));
-            //routeOptions.Add(new LatLng(33.771282, -84.392072));
-            //routeOptions.Add(new LatLng(33.776892, -84.392088));
-            //routeOptions.Add(new LatLng(33.776961, -84.395176));
-            //routeOptions.Add(new LatLng(33.778180, -84.396451));
-            //routeOptions.Add(new LatLng(33.778413, -84.401306));
-            //routeOptions.Add(new LatLng(33.778007, -84.401955));
-            //routeOptions.Add(new LatLng(33.777316, -84.402397));
-            //routeOptions.Add(new LatLng(33.774930, -84.402623));
-            //routeOptions.Add(new LatLng(33.774375, -84.402450));
-            //routeOptions.Add(new LatLng(33.773929, -84.402063));
-            //routeOptions.Add(new LatLng(33.773688, -84.401366));
-            foreach (var position in greenCoordinates)
+            //routeOptions.InvokeColor(0x33DD1D36); // red
+            //routeOptions.InvokeColor(0x6600a86b); // green
+            foreach (var position in blueCoordinates)
             {
                 routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
             }
@@ -180,8 +182,8 @@ namespace GTNav.Droid {
 
             CircleOptions markerOptions = new CircleOptions(); // use these to mark the *buses* (until we get some better markers). I've put one at North Ave for example
             markerOptions.InvokeCenter(new LatLng(33.770171, -84.3911916));
-            markerOptions.InvokeRadius(1000);
-            markerOptions.InvokeFillColor(0XFF7F00);
+            markerOptions.InvokeRadius(10);
+            markerOptions.InvokeFillColor(0X33DD1D36);
             markerOptions.InvokeStrokeColor(0XFF4949);
             markerOptions.InvokeStrokeWidth(3);
 

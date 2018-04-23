@@ -11,6 +11,7 @@ namespace GTNav {
 
     public class CampusMap : Map {
         public List<Position> RouteCoordinates { get; set; }
+        public List<CustomPin> CustomPins { get; set; }
         public BusMarker Marker { get; set; }
 
         public CampusMap()
