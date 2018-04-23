@@ -171,6 +171,7 @@ namespace GTNav.Droid {
 
             PolylineOptions routeOptions = new PolylineOptions(); // route tracing, default to blue for now
             routeOptions.InvokeColor(0x3f75A2FF);
+
             //routeOptions.InvokeColor(0x33DD1D36); // red
             //routeOptions.InvokeColor(0x6600a86b); // green
             foreach (var position in blueCoordinates)
