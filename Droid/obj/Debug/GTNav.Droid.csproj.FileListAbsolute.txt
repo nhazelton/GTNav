@@ -318,8 +318,6 @@ C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Servi
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\GTNav.Droid.dll
-C:\Users\Nate\Documents\GitHub\GTNav\GTNav\bin\Debug\GTNav.dll
-C:\Users\Nate\Documents\GitHub\GTNav\Droid\bin\Debug\GTNav.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\GTNav.Droid.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Nate\Documents\GitHub\GTNav\Droid\obj\Debug\linksrc\GTNav.dll.mdb

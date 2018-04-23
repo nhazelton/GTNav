@@ -10,6 +10,7 @@ namespace GTNav
     public class GreenCampusMap : Map
     {
         public List<Position> RouteCoordinates { get; set; }
+        public List<Position> Buses { get; set; }
 
         public GreenCampusMap()
         {

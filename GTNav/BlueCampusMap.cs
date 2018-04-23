@@ -10,6 +10,7 @@ namespace GTNav
     public class BlueCampusMap : Map
     {
         public List<Position> RouteCoordinates { get; set; }
+        public List<Position> Buses { get; set; }
         public List<CustomPin> CustomPins { get; set; }
 
         public BlueCampusMap()

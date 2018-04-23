@@ -61,6 +61,21 @@ namespace GTNav.Droid
             }
 
             NativeMap.AddPolyline(polylineOptions);
+
+            foreach (Bus bus in BusList.busList)
+            {
+                if (bus.route == "blue")
+                {
+                    CircleOptions circleOptions = new CircleOptions();
+                    circleOptions.InvokeCenter(new LatLng(bus.lat, bus.lng));
+                    circleOptions.InvokeRadius(30);
+                    circleOptions.InvokeFillColor(0X700000ff);
+                    circleOptions.InvokeStrokeColor(0X70FFFFFF);
+                    circleOptions.InvokeStrokeWidth(5);
+
+                    NativeMap.AddCircle(circleOptions);
+                }
+            }
         }
     }
 }

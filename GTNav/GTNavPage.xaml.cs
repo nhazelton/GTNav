@@ -378,7 +378,7 @@ namespace GTNav {
             Bus[] items = JsonConvert.DeserializeObject<Bus[]>(mycontent);
 
             foreach(Bus item in items) {
-                Debug.WriteLine(item.id);   
+                BusList.busList.Add(item);
             }
 
         }
