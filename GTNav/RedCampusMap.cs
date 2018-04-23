@@ -10,6 +10,8 @@ namespace GTNav
     public class RedCampusMap : Map
     {
         public List<Position> RouteCoordinates { get; set; }
+        public List<Position> Buses { get; set; }
+        public List<CustomPin> CustomPins { get; set; }
 
         public RedCampusMap()
         {

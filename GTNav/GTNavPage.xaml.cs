@@ -33,10 +33,10 @@ namespace GTNav {
         Location loc;
         public Button walkButton;
         public Button rideButton;
+        public Button fastButton;
         bool searchReady = false;
 
         enum Routes {Red, Blue, Green, Trolley, Emory, MidnightRambler, TSExpress};
-
 
         HttpClient client;
 
@@ -56,7 +56,6 @@ namespace GTNav {
             searchBar.SearchCommand = new Command(() => { //Starts an action once an item is searched
                 searchQuery = searchBar.Text;
                 searchBar.Text = "OK!";
-                Debug.WriteLine(searchQuery);
             }); // sets "on enter" command to populate searchQuery and display success message on bar
 
 
@@ -84,9 +83,6 @@ namespace GTNav {
                 //Allow the walk and ride buttons to activate
                 searchReady = true;
             };
-
-
-
 
             campusMap = MyCampusMap;
             var sampleMarker = new Position(33.774671, -84.396374);
@@ -194,9 +190,11 @@ namespace GTNav {
             rideButton = MyRideButton;
             rideButton.Clicked += OnRideButtonPressed; // OnRideButtonPressed happens when button is tapped -- see below
 
+            fastButton = MyFastButton;
+            fastButton.Clicked += OnFastButtonPressed;
+
             // add future functionality code here
         }
-
 
 
         public async Task<String> SendLocations(string URL)
@@ -234,26 +232,63 @@ namespace GTNav {
         //At the moment there is no cool visual when pressing button, but it has functionality
         //Passs on to a new page depending on what is selected
 
+        public async void OnFastButtonPressed(object sender, EventArgs e)
+        {
+            if (searchReady)
+            {
+                string walkTime = await getWalkingTime();
+                string rideTime = await getRidingTime();
+                string subWalkTime = walkTime.Substring(0, 2); // we take these substrings to chop off the 'mins' -- we have to be confident that travel time will not exceed 99
+                string subRideTime = rideTime.Substring(0, 2);
+
+                int walkMins = 0;
+                int rideMins = 0;
+
+                Int32.TryParse(subWalkTime, out walkMins);
+                Int32.TryParse(subRideTime, out rideMins);
+
+                Debug.WriteLine(walkMins);
+                Debug.WriteLine(rideMins);
+
+                if (walkMins <= rideMins) // on ties we say walk. help the environment!
+                {
+                    await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime, loc));
+                }
+                else
+                {
+                    await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
+                }
+            }
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
+            }
+        }
+
         //activate if the button is presed and the search has been completed
         public async void OnWalkButtonPressed(object sender, EventArgs e)
         {
             if (searchReady)
-            { // if button is currently 'on'
-              //    if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
-              //        ridePressed = false;
-              //        rideButton.BackgroundColor = Color.LimeGreen;
-              //        rideButton.TextColor = Color.Black;
-              //    }
+            { 
                 string walkTime = await getWalkingTime();
                 await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime, loc));
-                //    walkPressed = true;
-                //    walkButton.BackgroundColor = Color.White;
-                //    walkButton.TextColor = Color.Fuchsia;
-            }// else { // if it's not
-            //    walkPressed = false;
-            //    walkButton.BackgroundColor = Color.Fuchsia;
-            //    walkButton.TextColor = Color.Black;
-            //}
+            }
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
+            }
+        }
+
+
+        //activate if the button is presed and the search has been completed
+        public async void OnRideButtonPressed(object sender, EventArgs e)
+        {
+            if (searchReady)
+            {
+                string rideTime = await getRidingTime();
+                await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
+
+            }
             else
             {
                 DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
@@ -283,29 +318,55 @@ namespace GTNav {
             return walkTimeString;
         }
 
-        //activate if the button is presed and the search has been completed
-        public void OnRideButtonPressed(object sender, EventArgs e)
+        public async Task<String> getRidingTime()
         {
-            if (searchReady)
-            { // if button is currently 'on'
-              //    if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
-              //        walkPressed = false;
-              //        walkButton.BackgroundColor = Color.Fuchsia;
-              //        walkButton.TextColor = Color.Black;
-              //    }
-                App.NavigationPage.Navigation.PushAsync(new RidePage());
-                //ridePressed = true;
-                //    rideButton.BackgroundColor = Color.White;
-                //    rideButton.TextColor = Color.LimeGreen;
-            }// else { // if it's not
-            //    ridePressed = false;
-            //    rideButton.BackgroundColor = Color.LimeGreen;
-            //    rideButton.TextColor = Color.Black;
-            //}
-            else
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(0.01), null, true);
+
+            double startLat = position.Latitude;
+            double startLong = position.Longitude;
+            string destLat = loc.Latititude.ToString();
+            string destLong = loc.Longitude.ToString();
+
+            string stopLat = "";
+            string stopLng = "";
+            string finalLat = "";
+            string finalLng = "";
+            int min = int.MaxValue;
+
+            foreach (var stop in campusMap.CustomPins)
             {
-                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
+                stopLat = stop.Position.Latitude.ToString();
+                stopLng = stop.Position.Longitude.ToString();
+                string URLstop = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=walking&origins=" + startLat + "," + startLong + "&destinations=" + stopLat + "," + stopLng + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8";
+                Task<String> stopTask = Task.Run(async () => await SendLocations(URLstop));
+                string stopTimeString = stopTask.Result;
+
+                stopTimeString = stopTimeString.Substring(0, 2);
+                int stopTime = 0;
+                Int32.TryParse(stopTimeString, out stopTime);
+
+                if (stopTime < min)
+                {
+                    min = stopTime;
+                    finalLat = stopLat;
+                    finalLng = stopLng;
+                }
             }
+
+            string URLride = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=driving&origins=" + finalLat + "," + finalLng + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+            Task<String> timeTask = Task.Run(async () => await SendLocations(URLride));
+            timeTask.Wait();
+            string rideTimeString = timeTask.Result;
+
+            rideTimeString = rideTimeString.Substring(0, 2);
+            int rideTime = 0;
+            Int32.TryParse(rideTimeString, out rideTime);
+            rideTime = rideTime + min + 5;
+            rideTimeString = rideTime.ToString() + " min";
+
+            return rideTimeString;
         }
 
         private async void plotBuses(Routes route) { // Plots the current location of the buses of a specific route
@@ -317,7 +378,7 @@ namespace GTNav {
             Bus[] items = JsonConvert.DeserializeObject<Bus[]>(mycontent);
 
             foreach(Bus item in items) {
-                Debug.WriteLine(item.id);   
+                BusList.busList.Add(item);
             }
 
         }

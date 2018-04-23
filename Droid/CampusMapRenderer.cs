@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 
 using Android.App;
@@ -29,9 +30,11 @@ namespace GTNav.Droid {
         List<Position> redCoordinates = new List<Position>();
         List<Position> greenCoordinates = new List<Position>();
         List<Position> trolleyCoordinates = new List<Position>();
+        List<Bus> buses = new List<Bus>();
         List<CustomPin> customPins;
         BusMarker marker;
 
+        HttpClient client;
 
         public CampusMapRenderer(Context context) : base(context) {
             // nothing ¯\_(ツ)_/¯
@@ -61,6 +64,9 @@ namespace GTNav.Droid {
 
         protected override void OnMapReady(GoogleMap map) {
             base.OnMapReady(map);
+
+            client = new HttpClient();
+            client.MaxResponseContentBufferSize = 256000;
 
             // add blue positions
             blueCoordinates.Add(new Position(33.771282, -84.392072));
@@ -183,21 +189,28 @@ namespace GTNav.Droid {
 
             //routeOptions.InvokeColor(0x33DD1D36); // red
             //routeOptions.InvokeColor(0x6600a86b); // green
-            foreach (var position in blueCoordinates)
+            foreach (var position in redCoordinates)
+            {
+                routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
+            }
+            foreach (var position in greenCoordinates)
             {
                 routeOptions.Add(new LatLng(position.Latitude, position.Longitude));
             }
 
-            NativeMap.AddPolyline(routeOptions);
+            NativeMap.AddPolyline(routeOptions);         
 
-            CircleOptions markerOptions = new CircleOptions(); // use these to mark the *buses* (until we get some better markers). I've put one at North Ave for example
-            markerOptions.InvokeCenter(new LatLng(33.770171, -84.3911916));
-            markerOptions.InvokeRadius(10);
-            markerOptions.InvokeFillColor(0X33DD1D36);
-            markerOptions.InvokeStrokeColor(0XFF4949);
-            markerOptions.InvokeStrokeWidth(3);
+            foreach (Bus bus in BusList.busList)
+            {
+                CircleOptions circleOptions = new CircleOptions();
+                circleOptions.InvokeCenter(new LatLng(bus.lat, bus.lng));
+                circleOptions.InvokeRadius(30);
+                circleOptions.InvokeFillColor(0X70000000);
+                circleOptions.InvokeStrokeColor(0X70FFFFFF);
+                circleOptions.InvokeStrokeWidth(5);
 
-            NativeMap.AddCircle(markerOptions);
+                NativeMap.AddCircle(circleOptions);
+            }
         }
 
     } // CampusMapRenderer

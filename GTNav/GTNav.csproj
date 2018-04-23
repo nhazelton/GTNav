@@ -40,6 +40,7 @@
     <Compile Include="BlueRoutePage.xaml.cs">
       <DependentUpon>BlueRoutePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BusList.cs" />
     <Compile Include="BusMarker.cs" />
     <Compile Include="CampusMap.cs" />
     <Compile Include="GreenCampusMap.cs" />
