@@ -56,7 +56,6 @@ namespace GTNav {
             searchBar.SearchCommand = new Command(() => { //Starts an action once an item is searched
                 searchQuery = searchBar.Text;
                 searchBar.Text = "OK!";
-                Debug.WriteLine(searchQuery);
             }); // sets "on enter" command to populate searchQuery and display success message on bar
 
 
@@ -284,7 +283,7 @@ namespace GTNav {
         }
 
         //activate if the button is presed and the search has been completed
-        public void OnRideButtonPressed(object sender, EventArgs e)
+        public async void OnRideButtonPressed(object sender, EventArgs e)
         {
             if (searchReady)
             { // if button is currently 'on'
@@ -293,7 +292,8 @@ namespace GTNav {
               //        walkButton.BackgroundColor = Color.Fuchsia;
               //        walkButton.TextColor = Color.Black;
               //    }
-                App.NavigationPage.Navigation.PushAsync(new RidePage());
+                string rideTime = await getRidingTime();
+                await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
                 //ridePressed = true;
                 //    rideButton.BackgroundColor = Color.White;
                 //    rideButton.TextColor = Color.LimeGreen;
@@ -306,6 +306,24 @@ namespace GTNav {
             {
                 DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
             }
+        }
+
+        public async Task<String> getRidingTime()
+        {
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(0.01), null, true);
+
+            double startLat = position.Latitude;
+            double startLong = position.Longitude;
+            string destLat = loc.Latititude.ToString();
+            string destLong = loc.Longitude.ToString();
+
+            string URLride = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=driving&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+            Task<String> timeTask = Task.Run(async () => await SendLocations(URLride));
+            timeTask.Wait();
+            string rideTimeString = timeTask.Result;
+            return rideTimeString;
         }
 
         private async void plotBuses(Routes route) { // Plots the current location of the buses of a specific route

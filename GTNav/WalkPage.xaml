@@ -5,6 +5,10 @@
 
     <ContentPage.Content BackgroundColor="LightGray">
         <StackLayout>
+            <Label Text="You can get there in:"
+                    Font="28"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
             <Label Text="Happy Walking"
                 Font="40"
                 VerticalOptions="CenterAndExpand" 
@@ -19,9 +23,10 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Button x:Name="OnwardButton" Grid.Row="0" Grid.Column="1" Text="Walk" TextColor="Black" BackgroundColor="Fuschia"/>
-                <Button x:Name="ReturnButton" Grid.Row="1" Grid.Column="0" Text="Back" TextColor="White" BackgroundColor="#335170"/>
-                <Button x:Name="DirectionsButton" Grid.Row="1" Grid.Column="2" Text="Directions" TextColor="White" BackgroundColor="#335170"/>
+                <Label Text="You should..." Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Font="16"/>
+                <Button x:Name="OnwardButton" Grid.Row="1" Grid.Column="1" Text="Walk" TextColor="Fuschia" BackgroundColor="White" BorderColor="Gray"/>
+                <Button x:Name="ReturnButton" Grid.Row="2" Grid.Column="0" Text="Back" TextColor="White" BackgroundColor="#335170"/>
+                <Button x:Name="DirectionsButton" Grid.Row="2" Grid.Column="2" Text="Directions" TextColor="White" BackgroundColor="#335170"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

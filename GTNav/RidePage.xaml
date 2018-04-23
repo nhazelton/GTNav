@@ -3,11 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GTNav.RidePage">
 
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="LightGray">
+    <ContentPage.Content BackgroundColor="LightGray">
+        <StackLayout>
+            <Label Text="You can get there in:"
+                    Font="28"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
             <Label Text="Happy Riding!"
+                Font="40"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                x:Name="rideEstimate"/>
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -18,9 +24,10 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Button x:Name="OnwardButton" Grid.Row="0" Grid.Column="1" Text="Ride" TextColor="Black" BackgroundColor="LimeGreen"/>
-                <Button x:Name="ReturnButton" Grid.Row="1" Grid.Column="0" Text="Back" TextColor="White" BackgroundColor="#335170"/>
-                <Button x:Name="DirectionsButton" Grid.Row="1" Grid.Column="2" Text="Directions" TextColor="White" BackgroundColor="#335170"/>
+                <Label Text="You should..." Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Font="16"/>
+                <Button x:Name="OnwardButton" Grid.Row="1" Grid.Column="1" Text="Ride" TextColor="LimeGreen" BackgroundColor="White" BorderColor="Gray"/>
+                <Button x:Name="ReturnButton" Grid.Row="2" Grid.Column="0" Text="Back" TextColor="White" BackgroundColor="#335170"/>
+                <Button x:Name="DirectionsButton" Grid.Row="2" Grid.Column="2" Text="Directions" TextColor="White" BackgroundColor="#335170"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
