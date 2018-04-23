@@ -43,7 +43,7 @@ namespace GTNav.Droid {
             marker.SetPosition(new LatLng(pin.Position.Latitude, pin.Position.Longitude));
             marker.SetTitle(pin.Label);
             marker.SetSnippet(pin.Address);
-            marker.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueAzure));
+            marker.SetIcon(BitmapDescriptorFactory.FromAsset("BusStop_blue.png"));
             return marker;
         }
 
@@ -70,6 +70,15 @@ namespace GTNav.Droid {
             blueCoordinates.Add(new Position(33.778413, -84.401306));
             blueCoordinates.Add(new Position(33.778007, -84.401955));
             blueCoordinates.Add(new Position(33.777316, -84.402397));// 6th and ferst
+            blueCoordinates.Add(new Position(33.777295, -84.404166));
+            blueCoordinates.Add(new Position(33.778676, -84.404192));
+            blueCoordinates.Add(new Position(33.778696, -84.406125));
+            blueCoordinates.Add(new Position(33.779625, -84.406100));
+            blueCoordinates.Add(new Position(33.779638, -84.402478));
+            blueCoordinates.Add(new Position(33.778390, -84.401328));
+            blueCoordinates.Add(new Position(33.777987, -84.401987));
+            blueCoordinates.Add(new Position(33.777316, -84.402397));
+
             blueCoordinates.Add(new Position(33.774930, -84.402623));
             blueCoordinates.Add(new Position(33.774375, -84.402450));
             blueCoordinates.Add(new Position(33.773929, -84.402063));

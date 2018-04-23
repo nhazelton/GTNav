@@ -94,13 +94,97 @@ namespace GTNav {
                 Position = sampleMarker,
                 Radius = 100
             };
-            var pin = new CustomPin
+            var pin1 = new CustomPin
             {
                 Position = new Position(33.770053, -84.392149),
-                Label = ""
+                Label = "North Ave"
             };
-            campusMap.CustomPins = new List<CustomPin> { pin };
-            campusMap.Pins.Add(pin);
+            var pin2 = new CustomPin
+            {
+                Position = new Position(33.771878, -84.391947),
+                Label = "Techwood"
+            };
+            var pin3 = new CustomPin
+            {
+                Position = new Position(33.774044, -84.391924),
+                Label = "Techwood and Bobby Dodd"
+            };
+            var pin4 = new CustomPin
+            {
+                Position = new Position(33.775101, -84.391916),
+                Label = "Techwood and 4th"
+            };
+            var pin5 = new CustomPin
+            {
+                Position = new Position(33.776793, -84.392025),
+                Label = "Techwood and 5th"
+            };
+            var pin6 = new CustomPin
+            {
+                Position = new Position(33.777035, -84.394048),
+                Label = "Ferst and Fowler"
+            };
+            var pin7 = new CustomPin
+            {
+                Position = new Position(33.777515, -84.395585),
+                Label = "Ferst and Cherry"
+            };
+            var pin8 = new CustomPin
+            {
+                Position = new Position(33.778332, -84.397992),
+                Label = "Ferst and Atlantic"
+            };
+            var pin9 = new CustomPin
+            {
+                Position = new Position(33.778367, -84.399497),
+                Label = "Ferst and State"
+            };
+            var pin10 = new CustomPin
+            {
+                Position = new Position(33.778235, -84.401809),
+                Label = "Ferst and Hemphill"
+            };
+            var pin11 = new CustomPin
+            {
+                Position = new Position(33.778160, -84.404152),
+                Label = "McMillan"
+            };
+            var pin12 = new CustomPin
+            {
+                Position = new Position(33.779695, -84.404748),
+                Label = "8th"
+            };
+            var pin13 = new CustomPin
+            {
+                Position = new Position(33.779699, -84.402806),
+                Label = "Hemphill"
+            };
+            var pin14 = new CustomPin
+            {
+                Position = new Position(33.775135, -84.402674),
+                Label = "CRC"
+            };
+            var pin15 = new CustomPin
+            {
+                Position = new Position(33.773336, -84.399215),
+                Label = "Student Center"
+            };
+            var pin16 = new CustomPin
+            {
+                Position = new Position(33.772783, -84.397285),
+                Label = "Weber"
+            };
+            var pin17 = new CustomPin
+            {
+                Position = new Position(33.772325, -84.395647),
+                Label = "Ferst and Cherry"
+            };
+            campusMap.CustomPins = new List<CustomPin> { pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8,
+                pin9, pin10, pin11, pin12, pin13, pin14, pin15, pin16, pin17};
+            foreach(var pin in campusMap.CustomPins)
+            {
+                campusMap.Pins.Add(pin);
+            }
 
             campusMap.MoveToRegion(MapSpan.FromCenterAndRadius(sampleMarker, Distance.FromMiles(0.6)));
 
