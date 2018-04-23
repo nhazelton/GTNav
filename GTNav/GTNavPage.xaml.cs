@@ -38,7 +38,6 @@ namespace GTNav {
 
         enum Routes {Red, Blue, Green, Trolley, Emory, MidnightRambler, TSExpress};
 
-
         HttpClient client;
 
         public GTNavPage() {
@@ -84,9 +83,6 @@ namespace GTNav {
                 //Allow the walk and ride buttons to activate
                 searchReady = true;
             };
-
-
-
 
             campusMap = MyCampusMap;
             var sampleMarker = new Position(33.774671, -84.396374);
@@ -201,7 +197,6 @@ namespace GTNav {
         }
 
 
-
         public async Task<String> SendLocations(string URL)
         {
             var uri = new Uri(URL);
@@ -264,28 +259,36 @@ namespace GTNav {
                     await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
                 }
             }
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
+            }
         }
 
         //activate if the button is presed and the search has been completed
         public async void OnWalkButtonPressed(object sender, EventArgs e)
         {
             if (searchReady)
-            { // if button is currently 'on'
-              //    if (ridePressed) { // 'unpress' the ride button -- same contents as else block in OnRideButtonPressed
-              //        ridePressed = false;
-              //        rideButton.BackgroundColor = Color.LimeGreen;
-              //        rideButton.TextColor = Color.Black;
-              //    }
+            { 
                 string walkTime = await getWalkingTime();
                 await App.NavigationPage.Navigation.PushAsync(new WalkPage(walkTime, loc));
-                //    walkPressed = true;
-                //    walkButton.BackgroundColor = Color.White;
-                //    walkButton.TextColor = Color.Fuchsia;
-            }// else { // if it's not
-            //    walkPressed = false;
-            //    walkButton.BackgroundColor = Color.Fuchsia;
-            //    walkButton.TextColor = Color.Black;
-            //}
+            }
+            else
+            {
+                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
+            }
+        }
+
+
+        //activate if the button is presed and the search has been completed
+        public async void OnRideButtonPressed(object sender, EventArgs e)
+        {
+            if (searchReady)
+            {
+                string rideTime = await getRidingTime();
+                await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
+
+            }
             else
             {
                 DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
@@ -313,32 +316,6 @@ namespace GTNav {
             string walkTimeString = timeTask.Result;
             Debug.WriteLine(walkTimeString);
             return walkTimeString;
-        }
-
-        //activate if the button is presed and the search has been completed
-        public async void OnRideButtonPressed(object sender, EventArgs e)
-        {
-            if (searchReady)
-            { // if button is currently 'on'
-              //    if (walkPressed) { // 'unpress' the walk button -- same contents as else block in OnWalkButtonPressed
-              //        walkPressed = false;
-              //        walkButton.BackgroundColor = Color.Fuchsia;
-              //        walkButton.TextColor = Color.Black;
-              //    }
-                string rideTime = await getRidingTime();
-                await App.NavigationPage.Navigation.PushAsync(new RidePage(rideTime, loc));
-                //ridePressed = true;
-                //    rideButton.BackgroundColor = Color.White;
-                //    rideButton.TextColor = Color.LimeGreen;
-            }// else { // if it's not
-            //    ridePressed = false;
-            //    rideButton.BackgroundColor = Color.LimeGreen;
-            //    rideButton.TextColor = Color.Black;
-            //}
-            else
-            {
-                DisplayAlert("Alert", "Please search for a location and select from the drop-down menu", "OK");
-            }
         }
 
         public async Task<String> getRidingTime()
