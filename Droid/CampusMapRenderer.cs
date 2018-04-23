@@ -205,9 +205,20 @@ namespace GTNav.Droid {
                 CircleOptions circleOptions = new CircleOptions();
                 circleOptions.InvokeCenter(new LatLng(bus.lat, bus.lng));
                 circleOptions.InvokeRadius(30);
-                circleOptions.InvokeFillColor(0X70000000);
+                if (bus.route == "red") {
+                    circleOptions.InvokeFillColor(0X70F44242);
+
+                } else if (bus.route == "blue") {
+                    circleOptions.InvokeFillColor(0X704141F4);
+                } else if (bus.route == "green") {
+                    circleOptions.InvokeFillColor(0X7046F441);
+                }else {
+                    circleOptions.InvokeFillColor(0X70000000);
+                }
+
                 circleOptions.InvokeStrokeColor(0X70FFFFFF);
                 circleOptions.InvokeStrokeWidth(5);
+
 
                 NativeMap.AddCircle(circleOptions);
             }
