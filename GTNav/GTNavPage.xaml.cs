@@ -329,10 +329,43 @@ namespace GTNav {
             string destLat = loc.Latititude.ToString();
             string destLong = loc.Longitude.ToString();
 
-            string URLride = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=driving&origins=" + startLat + "," + startLong + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
+            string stopLat = "";
+            string stopLng = "";
+            string finalLat = "";
+            string finalLng = "";
+            int min = int.MaxValue;
+
+            foreach (var stop in campusMap.CustomPins)
+            {
+                stopLat = stop.Position.Latitude.ToString();
+                stopLng = stop.Position.Longitude.ToString();
+                string URLstop = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=walking&origins=" + startLat + "," + startLong + "&destinations=" + stopLat + "," + stopLng + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8";
+                Task<String> stopTask = Task.Run(async () => await SendLocations(URLstop));
+                string stopTimeString = stopTask.Result;
+
+                stopTimeString = stopTimeString.Substring(0, 2);
+                int stopTime = 0;
+                Int32.TryParse(stopTimeString, out stopTime);
+
+                if (stopTime < min)
+                {
+                    min = stopTime;
+                    finalLat = stopLat;
+                    finalLng = stopLng;
+                }
+            }
+
+            string URLride = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&mode=driving&origins=" + finalLat + "," + finalLng + "&destinations=" + destLat + "," + destLong + "&key=AIzaSyBiI71LNFa4oOgVHyqrzPN3VGAMtnPLvm8"; // Constructs a url for sending to Google with our maps api
             Task<String> timeTask = Task.Run(async () => await SendLocations(URLride));
             timeTask.Wait();
             string rideTimeString = timeTask.Result;
+
+            rideTimeString = rideTimeString.Substring(0, 2);
+            int rideTime = 0;
+            Int32.TryParse(rideTimeString, out rideTime);
+            rideTime = rideTime + min + 5;
+            rideTimeString = rideTime.ToString() + " min";
+
             return rideTimeString;
         }
 
