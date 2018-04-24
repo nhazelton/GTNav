@@ -3,7 +3,7 @@ The implementation of a fully-functional campus navigation app for iOS and Andro
 
 ## Release Notes (v 1.0.0)
 
-### Features:
+### New Features:
 - Support for numerous on-campus locations through an autocompleting search
 - Approximate walk times from device location to specified destination can be fetched
 - Approximate travel times by campus shuttle from device location to specified destination can be fetched
@@ -46,6 +46,16 @@ Once the project has been deployed, it will remain on the connected Android devi
 
 ### Troubleshooting:
 
-#### What to do if ...
+#### Build fails with multiple errors
+
+First and foremost, try rebuilding the solution (Build -> Rebuild Solution) a few times and see if that resolves the issue. If this does not solve the issue then ensure that the Xamarin plugin is installed -- if all else fails, reinstalling the Visual Studio IDE fixes most critical issues.
+
+#### Deploy fails with Logcat error
+
+Again, rebuilding the solution a few times tends to solve this issue. If it does not, then try uninstalling the GTNav application from the connected Android device and deploying again
+
+#### Fetching walk and ride times does not work
+
+The Android device must be connected for the internet for walk and ride times to appear
 
 
